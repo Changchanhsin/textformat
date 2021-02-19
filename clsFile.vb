@@ -16,16 +16,26 @@ Public Class clsFile
     End Function
 
     Public Function Close() As Boolean
-        On Error Resume Next
-        sr.Close()
+        If Not IsNothing(sr) Then
+            sr.Close()
+        End If
+        Close = True
     End Function
 
     Public Function isEnd() As Boolean
-        isEnd = sr.EndOfStream
+        If Not IsNothing(sr) Then
+            isEnd = sr.EndOfStream
+        Else
+            isEnd = True
+        End If
     End Function
 
     Public Function ReadLine() As String
-        ReadLine = sr.ReadLine()
+        If Not IsNothing(sr) Then
+            ReadLine = sr.ReadLine()
+        Else
+            ReadLine = ""
+        End If
     End Function
 
     Public Function Save(filename As String, textobj As TextBox, codeset As String) As Boolean

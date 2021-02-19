@@ -65,6 +65,7 @@
         isUntitled = True
         UpdateFormTitle()
         UpdateCodeset()
+        frmScript.Show()
     End Sub
 
     Private Sub frmMain_Resize(sender As Object, e As EventArgs) Handles Me.Resize
@@ -240,5 +241,150 @@
             Exit Sub
         Catch
         End Try
+    End Sub
+
+    Private Sub NextTitleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextTitleToolStripMenuItem.Click
+        If txtMain.SelectionStart > 0 Then
+            txtMain.SelectionStart = InStr(txtMain.SelectionStart + 1, txtMain.Text, vbCrLf & vbCrLf & vbCrLf)
+            txtMain.SelectionLength = 3
+        Else
+            txtMain.SelectionStart = InStr(txtMain.Text, vbCrLf & vbCrLf & vbCrLf)
+            txtMain.SelectionLength = 3
+        End If
+        txtMain.ScrollToCaret()
+    End Sub
+
+    Private Sub PrevTitleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrevTitleToolStripMenuItem.Click
+        If txtMain.SelectionStart > 0 Then
+            txtMain.SelectionStart = InStrRev(txtMain.Text, vbCrLf & vbCrLf & vbCrLf, txtMain.SelectionStart - 1)
+            txtMain.SelectionLength = 5
+        Else
+            txtMain.SelectionStart = InStrRev(txtMain.Text, vbCrLf & vbCrLf & vbCrLf)
+            txtMain.SelectionLength = 5
+        End If
+        txtMain.ScrollToCaret()
+    End Sub
+
+    Private Sub NextSubTitleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NextSubTitleToolStripMenuItem.Click
+        If txtMain.SelectionStart > 0 Then
+            txtMain.SelectionStart = InStr(txtMain.SelectionStart + 1, txtMain.Text, vbCrLf & vbCrLf & "　　　　")
+            txtMain.SelectionLength = 7
+        Else
+            txtMain.SelectionStart = InStr(txtMain.Text, vbCrLf & vbCrLf & "　　　　")
+            txtMain.SelectionLength = 7
+        End If
+        txtMain.ScrollToCaret()
+    End Sub
+
+    Private Sub PrevSubTitleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrevSubTitleToolStripMenuItem.Click
+        If txtMain.SelectionStart > 0 Then
+            txtMain.SelectionStart = InStrRev(txtMain.Text, vbCrLf & vbCrLf & "　　　　", txtMain.SelectionStart - 1)
+            txtMain.SelectionLength = 7
+        Else
+            txtMain.SelectionStart = InStrRev(txtMain.Text, vbCrLf & vbCrLf & "　　　　")
+            txtMain.SelectionLength = 7
+        End If
+        txtMain.ScrollToCaret()
+    End Sub
+
+    Private Sub UndoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UndoToolStripMenuItem.Click
+        If txtMain.CanUndo Then
+            txtMain.Undo()
+        End If
+    End Sub
+
+    Private Sub RedoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RedoToolStripMenuItem.Click
+        If txtMain.CanUndo Then
+            txtMain.Undo()
+        End If
+    End Sub
+
+    Private Sub AddSubTitleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddSubTitleToolStripMenuItem.Click
+        txtMain.Paste(vbCrLf & vbCrLf & "　　　　")
+    End Sub
+
+    Private Sub AddTitleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddTitleToolStripMenuItem.Click
+        txtMain.Paste(vbCrLf & vbCrLf)
+    End Sub
+
+    Private Sub AddNormalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddNormalToolStripMenuItem.Click
+        txtMain.Paste(vbCrLf & "　　")
+    End Sub
+
+    Private Sub RemoveTrimToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RemoveTrimToolStripMenuItem.Click
+        txtMain.Text = txtMain.Text.Replace(" " & vbCrLf, vbCrLf)
+    End Sub
+
+    Private Sub RemoveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RemoveToolStripMenuItem.Click
+        txtMain.Text = txtMain.Text.Replace(vbCrLf & vbCrLf & vbCrLf, vbCrLf & vbCrLf)
+    End Sub
+
+    Private Sub ReplaceFullToHalfToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReplaceFullToHalfToolStripMenuItem.Click
+        txtMain.Text = txtMain.Text.Replace("０", "0")
+        txtMain.Text = txtMain.Text.Replace("１", "1")
+        txtMain.Text = txtMain.Text.Replace("２", "2")
+        txtMain.Text = txtMain.Text.Replace("３", "3")
+        txtMain.Text = txtMain.Text.Replace("４", "4")
+        txtMain.Text = txtMain.Text.Replace("５", "5")
+        txtMain.Text = txtMain.Text.Replace("６", "6")
+        txtMain.Text = txtMain.Text.Replace("７", "7")
+        txtMain.Text = txtMain.Text.Replace("８", "8")
+        txtMain.Text = txtMain.Text.Replace("９", "9")
+        txtMain.Text = txtMain.Text.Replace("ａ", "a")
+        txtMain.Text = txtMain.Text.Replace("ｂ", "b")
+        txtMain.Text = txtMain.Text.Replace("ｃ", "c")
+        txtMain.Text = txtMain.Text.Replace("ｄ", "d")
+        txtMain.Text = txtMain.Text.Replace("ｅ", "e")
+        txtMain.Text = txtMain.Text.Replace("ｆ", "f")
+        txtMain.Text = txtMain.Text.Replace("ｇ", "g")
+        txtMain.Text = txtMain.Text.Replace("ｈ", "h")
+        txtMain.Text = txtMain.Text.Replace("ｉ", "i")
+        txtMain.Text = txtMain.Text.Replace("ｊ", "j")
+        txtMain.Text = txtMain.Text.Replace("ｋ", "k")
+        txtMain.Text = txtMain.Text.Replace("ｌ", "l")
+        txtMain.Text = txtMain.Text.Replace("ｍ", "m")
+        txtMain.Text = txtMain.Text.Replace("ｎ", "n")
+        txtMain.Text = txtMain.Text.Replace("ｏ", "o")
+        txtMain.Text = txtMain.Text.Replace("ｐ", "p")
+        txtMain.Text = txtMain.Text.Replace("ｑ", "q")
+        txtMain.Text = txtMain.Text.Replace("ｒ", "r")
+        txtMain.Text = txtMain.Text.Replace("ｓ", "s")
+        txtMain.Text = txtMain.Text.Replace("ｔ", "t")
+        txtMain.Text = txtMain.Text.Replace("ｕ", "u")
+        txtMain.Text = txtMain.Text.Replace("ｖ", "v")
+        txtMain.Text = txtMain.Text.Replace("ｗ", "w")
+        txtMain.Text = txtMain.Text.Replace("ｘ", "x")
+        txtMain.Text = txtMain.Text.Replace("ｙ", "y")
+        txtMain.Text = txtMain.Text.Replace("ｚ", "z")
+        txtMain.Text = txtMain.Text.Replace("Ａ", "A")
+        txtMain.Text = txtMain.Text.Replace("Ｂ", "B")
+        txtMain.Text = txtMain.Text.Replace("Ｃ", "C")
+        txtMain.Text = txtMain.Text.Replace("Ｄ", "D")
+        txtMain.Text = txtMain.Text.Replace("Ｅ", "E")
+        txtMain.Text = txtMain.Text.Replace("Ｆ", "F")
+        txtMain.Text = txtMain.Text.Replace("Ｇ", "G")
+        txtMain.Text = txtMain.Text.Replace("Ｈ", "H")
+        txtMain.Text = txtMain.Text.Replace("Ｉ", "I")
+        txtMain.Text = txtMain.Text.Replace("Ｊ", "J")
+        txtMain.Text = txtMain.Text.Replace("Ｋ", "K")
+        txtMain.Text = txtMain.Text.Replace("Ｌ", "L")
+        txtMain.Text = txtMain.Text.Replace("Ｍ", "M")
+        txtMain.Text = txtMain.Text.Replace("Ｎ", "N")
+        txtMain.Text = txtMain.Text.Replace("Ｏ", "O")
+        txtMain.Text = txtMain.Text.Replace("Ｐ", "P")
+        txtMain.Text = txtMain.Text.Replace("Ｑ", "Q")
+        txtMain.Text = txtMain.Text.Replace("Ｒ", "R")
+        txtMain.Text = txtMain.Text.Replace("Ｓ", "S")
+        txtMain.Text = txtMain.Text.Replace("Ｔ", "T")
+        txtMain.Text = txtMain.Text.Replace("Ｕ", "U")
+        txtMain.Text = txtMain.Text.Replace("Ｖ", "V")
+        txtMain.Text = txtMain.Text.Replace("Ｗ", "W")
+        txtMain.Text = txtMain.Text.Replace("Ｘ", "X")
+        txtMain.Text = txtMain.Text.Replace("Ｙ", "Y")
+        txtMain.Text = txtMain.Text.Replace("Ｚ", "Z")
+    End Sub
+
+    Private Sub ReplaceSingleToDoubleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReplaceSingleToDoubleToolStripMenuItem.Click
+        txtMain.Text = txtMain.Text.Replace(vbCrLf, vbCrLf & vbCrLf)
     End Sub
 End Class
