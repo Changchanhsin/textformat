@@ -1,0 +1,505 @@
+﻿MACRO|显示回车换行|COMP|
+REPLACE|^d|<0x0d>|
+REPLACE|^a|<0x0a>|
+
+MACRO|以第一段缩进分段并以空行分标题|COMP|
+REPLACE|  |　|
+REPLACE| 　 |　　|
+REPLACE|^p^p|$$$|
+REPLACE|　　|$$##|
+REPLACE|　$$##|$$##|
+REPLACE| $$##|$$##|
+REPLACE|　$$##|$$##|
+REPLACE| $$##|$$##|
+RREPLACE|　$$##|$$##|
+REPLACE|^p||
+REPLACE|^a||
+REPLACE|^d||
+REPLACE|$$$|^p^p^p|
+REPLACE|$$##|^p^p　　|
+TRIM|
+
+MACRO|以空行分段|COMP|
+REPLACE|^p^p|$$##|
+CALL|替换换行|
+
+MACRO|以第一行缩进分段|COMP|
+REPLACE|  |　|
+REPLACE| 　 |　　|
+REPLACE|　　|$$##|
+REPLACE|　$$##|$$##|
+REPLACE| $$##|$$##|
+REPLACE|　$$##|$$##|
+REPLACE| $$##|$$##|
+RREPLACE|　$$##|$$##|
+CALL|替换换行|
+
+MACRO|替换换行|COMP|
+REPLACE|^p||
+REPLACE|^a||
+REPLACE|^d||
+REPLACE|$$##|^p^p　　|
+TRIM|
+
+MACRO|消除空行|COMP|
+REPLACE|　|  |
+REPLACE|                  ^p|^p|
+REPLACE|          ^p|^p|
+REPLACE|     ^p|^p|
+REPLACE|  ^p|^p|
+REPLACE| ^p|^p|
+REPLACE|^p^p^p^p^p|^p^p|
+REPLACE|^p^p^p^p|^p^p|
+REPLACE|^p^p^p|^p^p|
+
+MACRO|整理标点符号|COMP|
+REPLACE|······|……|
+REPLACE|·····|……|
+REPLACE|····|……|
+REPLACE|···|……|
+REPLACE|··|……|
+REPLACE|........|……|
+REPLACE|......|……|
+REPLACE|.....|……|
+REPLACE|....|……|
+REPLACE|...|……|
+REPLACE|.|。|
+REPLACE|。。。。。。|……|
+REPLACE|。。。。。|……|
+REPLACE|。。。。|……|
+REPLACE|。。。|……|
+REPLACE|。。|……|
+REPLACE|?|？|
+REPLACE|!|！|
+REPLACE|:|：|
+REPLACE|;|；|
+REPLACE|,|，|
+
+MACRO|希腊神话(HTML)|MAIN|
+REMOVE|<!--|-->|
+REPLACE|<BR>||
+PICK_TITLE|><B>|</B><|
+PICK_CONTENT|"94%">|--------|
+USE|CONTENT|
+CALL|以第一行缩进分段|
+PUT|CONTENT|
+MAKEALL|
+USE|ALL|
+
+MACRO|御能神术|MAIN|
+PICK_TITLE|<TITLE>|</TITLE>|
+REMOVE|发言人|<br>|
+PICK|<P class=mtext>|</TD>|
+REPLACE|<br><br>　　|^p^p　　|
+REPLACE|<br>||
+REPLACE|&nbsp;| |
+TRIM|
+REMOVE|^p　　　　||
+REPLACE|&nbsp;| |
+MAKEALL|
+
+MACRO|admin|MAIN|
+PICK_TITLE|<title>|</title>|
+PICK|<td class="14px">|</td>|
+REPLACE|<br><br>|^p^p　　|
+REPLACE|<br><br>　　|^p^p　　|
+REPLACE|<br><br>|^p^p　　|
+REPLACE|<br>||
+REPLACE|&nbsp;| |
+TRIM|
+REPLACE|***　　|^p^p　　|
+REPLACE|　　作者：|　　　　作者：|
+REPLACE|发言人：|　　　发言人：|
+REPLACE|出版：|^p　　　　出版：|
+REPLACE|整理：|^p　　　　整理：|
+REPLACE|原著：|^p　　　　原著：|
+REPLACE|扫校：|^p　　　　扫校：|
+REPLACE|转自：|^p　　　　转自：|
+MAKEALL|
+
+MACRO|文行天下|MAIN|
+CALLIFHAS|<TITLE>|御能神术|
+CALLIFHAS|<title>|admin|
+
+MACRO|数字转换成半角|COMP|
+REPLACE|０|0|
+REPLACE|１|1|
+REPLACE|２|2|
+REPLACE|３|3|
+REPLACE|４|4|
+REPLACE|５|5|
+REPLACE|６|6|
+REPLACE|７|7|
+REPLACE|８|8|
+REPLACE|９|9|
+
+MACRO|字母转换成半角|COMP|
+REPLACE|ａ|a|
+REPLACE|ｂ|b|
+REPLACE|ｃ|c|
+REPLACE|ｄ|d|
+REPLACE|ｅ|e|
+REPLACE|ｆ|f|
+REPLACE|ｇ|g|
+REPLACE|ｈ|h|
+REPLACE|ｉ|i|
+REPLACE|ｊ|j|
+REPLACE|ｋ|k|
+REPLACE|ｌ|l|
+REPLACE|ｍ|m|
+REPLACE|ｎ|n|
+REPLACE|ｏ|o|
+REPLACE|ｐ|p|
+REPLACE|ｑ|q|
+REPLACE|ｒ|r|
+REPLACE|ｓ|s|
+REPLACE|ｔ|t|
+REPLACE|ｕ|u|
+REPLACE|ｖ|v|
+REPLACE|ｗ|w|
+REPLACE|ｘ|x|
+REPLACE|ｙ|y|
+REPLACE|ｚ|z|
+REPLACE|Ａ|A|
+REPLACE|Ｂ|B|
+REPLACE|Ｃ|C|
+REPLACE|Ｄ|D|
+REPLACE|Ｅ|E|
+REPLACE|Ｆ|F|
+REPLACE|Ｇ|G|
+REPLACE|Ｈ|H|
+REPLACE|Ｉ|I|
+REPLACE|Ｊ|J|
+REPLACE|Ｋ|K|
+REPLACE|Ｌ|L|
+REPLACE|Ｍ|M|
+REPLACE|Ｎ|N|
+REPLACE|Ｏ|O|
+REPLACE|Ｐ|P|
+REPLACE|Ｑ|Q|
+REPLACE|Ｒ|R|
+REPLACE|Ｓ|S|
+REPLACE|Ｔ|T|
+REPLACE|Ｕ|U|
+REPLACE|Ｖ|V|
+REPLACE|Ｗ|W|
+REPLACE|Ｘ|X|
+REPLACE|Ｙ|Y|
+REPLACE|Ｚ|Z|
+
+MACRO|符号转换成半角|COMP|
+REPLACE|％|%|
+REPLACE|／|/|
+REPLACE|＼|\|
+REPLACE|＠|@|
+REPLACE|＃|#|
+REPLACE|＄|$|
+REPLACE|︿|^|
+REPLACE|＆|&|
+REPLACE|＊|*|
+REPLACE|＋|+|
+REPLACE|－|-|
+REPLACE|＝|=|
+REPLACE|＜|<|
+REPLACE|＞|>|
+REPLACE|．|.|
+
+MACRO|转换成半角|COMP|
+CALL|数字转换成半角|
+CALL|字母转换成半角|
+CALL|符号转换成半角|
+
+MACRO|风姿物语|MAIN|
+REMOVE||风姿物语-|
+REMOVE|</title>|style="FONT-SIZE: 10pt">|
+REMOVE|</span>||
+REPLACE|^t^t^t^t^t^t||
+REPLACE|^t^t^t^t^t||
+REPLACE|<p>|^p^p|
+REPLACE|</p>||
+TRIM|
+REPLACE|胤　|胤禛|
+
+MACRO|albd|MAIN|
+REMOVE||<big><big>|
+REMOVE|</big></big>|</span>|
+REMOVE|<o:p>|&nbsp;|
+REPLACE|        &nbsp;&nbsp;&nbsp; |　　|
+REPLACE|        |　　|
+REPLACE|^p|^p^p|
+
+MACRO|ByHTML|COMP|
+REPLACE|^p．^p|^p。^p|
+REPLACE|^t|^p^p|
+REPLACE|^p<p>^p|vbCrLf|
+REPLACE|^p<P>^p|vbCrLf|
+REPLACE|^p<br>^p|vbCrLf|
+REPLACE|^p<Br>^p|vbCrLf|
+REPLACE|^p<BR>^p|vbCrLf|
+REPLACE|^t|^p^p|
+REPLACE|^p&nbsp;^p|^p ^p|
+REPLACE|^p......^p|^p……^p|
+REPLACE|^p.....^p|^p……^p|
+REPLACE|^p....^p|^p……^p|
+REPLACE|^p...^p|^p……^p|
+REPLACE|^p..^p|^p……^p|
+REPLACE|^p.^p|^p。^p|
+REPLACE|^p。。。。。。^p|^p……^p|
+REPLACE|^p。。。。。^p|^p……^p|
+REPLACE|^p。。。。^p|^p……^p|
+REPLACE|^p。。。^p|^p……^p|
+REPLACE|^p。。^p|^p……^p|
+REPLACE|^p?^p|^p？^p|
+REPLACE|^p!^p|^p！^p|
+REPLACE|^p:^p|^p：^p|
+REPLACE|^p,^p|^p，^p|
+REPLACE|^p;^p|^p；^p|
+REPLACE|^d|^p|
+REPLACE|^a|^p|
+REPLACE|^p----^p|^p----$$$$%%%%$$$$^p|
+REPLACE|^p※^p|^p※$$$$%%%%$$$$^p|
+REPLACE|^p＊^p|^p＊$$$$%%%%$$$$^p|
+REPLACE|^p：^p|^p：$$$$%%%%$$$$^p|
+REPLACE|^p。^p|^p。$$$$%%%%$$$$^p|
+REPLACE|^p？^p|^p？$$$$%%%%$$$$^p|
+REPLACE|^p！^p|^p！$$$$%%%%$$$$^p|
+REPLACE|^p」^p|^p」$$$$%%%%$$$$^p|
+REPLACE|^p』^p|^p』$$$$%%%%$$$$^p|
+REPLACE|^p"^p|^p"$$$$%%%%$$$$^p|
+REPLACE|^p……^p|^p……$$$$%%%%$$$$^p|
+REPLACE|^p  ^p|^p^p|
+REPLACE|^p　^p|^p^p|
+REPLACE|^p　 ^p|^p^p|
+REPLACE|^p 　^p|^p^p|
+REPLACE|^p ^p|^p^p|
+REPLACE|^p|^p^p|
+REPLACE|^p$$$$%%%%$$$$」$$$$%%%%$$$$^p|^p」$$$$%%%%$$$$^p|
+REPLACE|^p$$$$%%%%$$$$』$$$$%%%%$$$$^p|^p』$$$$%%%%$$$$^p|
+REPLACE|^p$$$$%%%%$$$$^p|^p^p　　^p|
+TRIM|
+ADDSTRING|　　||
+
+MACRO|LineEnd|COMP|
+REPLACE|．|。|
+REPLACE|^t||
+REPLACE|&nbsp;| |
+REPLACE|......|……|
+REPLACE|.....|……|
+REPLACE|....|……|
+REPLACE|...|……|
+REPLACE|..|……|
+REPLACE|.|。|
+REPLACE|。。。。。。|……|
+REPLACE|。。。。。|……|
+REPLACE|。。。。|……|
+REPLACE|。。。|……|
+REPLACE|。。|……|
+REPLACE|?|？|
+REPLACE|!|！|
+REPLACE|:|：|
+REPLACE|,|，|
+REPLACE|;|；|
+REPLACE|^a|$$$$####$$$$|
+REPLACE|^d|$$$$####$$$$|
+REPLACE|$$$$####$$$$|^p|
+REPLACE|----^p|----$$$$%%%%$$$$|
+REPLACE|^p----|----$$$$%%%%$$$$|
+REPLACE|====^p|====$$$$%%%%$$$$|
+REPLACE|^p====|$$$$%%%%$$$$====|
+REPLACE|※^p|※$$$$%%%%$$$$|
+REPLACE|）^p|）$$$$%%%%$$$$|
+REPLACE|＊^p|＊$$$$%%%%$$$$|
+REPLACE|：^p|：$$$$%%%%$$$$|
+REPLACE|。^p|。$$$$%%%%$$$$|
+REPLACE|″^p|″$$$$%%%%$$$$|
+REPLACE|？^p|？$$$$%%%%$$$$|
+REPLACE|！^p|！$$$$%%%%$$$$|
+REPLACE|」^p|」$$$$%%%%$$$$|
+REPLACE|』^p|』$$$$%%%%$$$$|
+REPLACE|"^p|"$$$$%%%%$$$$|
+REPLACE|……^p|……$$$$%%%%$$$$|
+REPLACE|  ||
+REPLACE|　||
+REPLACE|　 ||
+REPLACE| 　||
+REPLACE| ||
+REPLACE|^p||
+REPLACE|$$$$%%%%$$$$」$$$$%%%%$$$$|」$$$$%%%%$$$$|
+REPLACE|$$$$%%%%$$$$』$$$$%%%%$$$$|』$$$$%%%%$$$$|
+REPLACE|$$$$%%%%$$$$|^p^p　　|
+TRIM|
+ADDSTRING|　　||
+
+MACRO|FirstLineFeed|COMP|
+REPLACE|^p||
+REPLACE|^t||
+REPLACE|&nbsp;| |
+REPLACE|......|……|
+REPLACE|.....|……|
+REPLACE|....|……|
+REPLACE|...|……|
+REPLACE|..|……|
+REPLACE|.|。|
+REPLACE|．|。|
+REPLACE|。。。。。。|……|
+REPLACE|。。。。。|……|
+REPLACE|。。。。|……|
+REPLACE|。。。|……|
+REPLACE|。。|……|
+REPLACE|^a|$$$$####$$$$|
+REPLACE|^d|$$$$####$$$$|
+REPLACE|$$$$####$$$$|^p|
+REPLACE|?|？|
+REPLACE|!|！|
+REPLACE|:|：|
+REPLACE|,|，|
+REPLACE|;|；|
+REPLACE|    |　　|
+REPLACE|  　|　　|
+REPLACE|　  |　　|
+REPLACE| 　 |　　|
+REPLACE|　　　　|　　|
+REPLACE|　　|^p^p　　|
+TRIM|
+ADDSTRING|　　||
+
+MACRO|BlankLine|COMP|
+REPLACE|．|。|
+REPLACE|^t||
+REPLACE|&nbsp;| |
+REPLACE|......|……|
+REPLACE|.....|……|
+REPLACE|....|……|
+REPLACE|...|……|
+REPLACE|..|……|
+REPLACE|.|。|
+REPLACE|。。。。。。|……|
+REPLACE|。。。。。|……|
+REPLACE|。。。。|……|
+REPLACE|。。。|……|
+REPLACE|。。|……|
+REPLACE|?|？|
+REPLACE|!|！|
+REPLACE|:|：|
+REPLACE|,|，|
+REPLACE|;|；|
+REPLACE|  ||
+REPLACE|　||
+REPLACE|　 ||
+REPLACE| 　||
+REPLACE| ||
+REPLACE|^p^p|$$$$####$$$$|
+REPLACE|^p||
+REPLACE|$$$$####$$$$|^p^p　　|
+TRIM|
+ADDSTRING|　　||
+
+MACRO|Public|COMP|
+REPLACE|．|。|
+REPLACE|^t||
+REPLACE|......|……|
+REPLACE|.....|……|
+REPLACE|....|……|
+REPLACE|...|……|
+REPLACE|..|……|
+REPLACE|.|。|
+REPLACE|。。。。。。|……|
+REPLACE|。。。。。|……|
+REPLACE|。。。。|……|
+REPLACE|。。。|……|
+REPLACE|。。|……|
+REPLACE|?|？|
+REPLACE|!|！|
+REPLACE|:|：|
+REPLACE|,|，|
+REPLACE|;|；|
+REPLACE|^a|^p|
+REPLACE|^d|^p|
+REPLACE|----^p|----$$$$%%%%$$$$|
+REPLACE|※^p|※$$$$%%%%$$$$|
+REPLACE|＊^p|＊$$$$%%%%$$$$|
+REPLACE|：^p|：$$$$%%%%$$$$|
+REPLACE|。^p|。$$$$%%%%$$$$|
+REPLACE|？^p|？$$$$%%%%$$$$|
+REPLACE|！^p|！$$$$%%%%$$$$|
+REPLACE|」^p|」$$$$%%%%$$$$|
+REPLACE|』^p|』$$$$%%%%$$$$|
+REPLACE|"^p|"$$$$%%%%$$$$|
+REPLACE|……^p|……$$$$%%%%$$$$|
+REPLACE|  ||
+REPLACE|　||
+REPLACE|　 ||
+REPLACE| 　||
+REPLACE| ||
+REPLACE|^p||
+REPLACE|$$$$%%%%$$$$」$$$$%%%%$$$$|」$$$$%%%%$$$$|
+REPLACE|$$$$%%%%$$$$』$$$$%%%%$$$$|』$$$$%%%%$$$$|
+REPLACE|$$$$%%%%$$$$|^p^p　　|
+TRIM|
+ADDSTRING|　　||
+
+MACRO|移除水印|COMP|
+REMOVEWATERMARK|<font |</font>|
+REPLACE|<br><br>|^p^p　　|
+REPLACE|<br>|^p　　|
+
+MACRO|白眉大侠|MAIN|
+PICK_TITLE|<FONT COLOR="red">|</font>|
+PICK_CONTENT|<span class="swy1">|--------|
+USE|CONTENT|
+CALL|以第一行缩进分段|
+ADDSTRING|　　||
+PUT|CONTENT|
+MAKEALL|
+USE|ALL|
+
+MACRO|美少女保镖|MAIN|
+PICK_TITLE|<div id="title">|</div>|
+PICK_CONTENT|<div id="content">|</div>|
+USE|CONTENT|
+REPLACE|&nbsp;&nbsp;&nbsp;&nbsp;|　　|
+REPLACE|<br />||
+PUT|CONTENT|
+MAKEALL|
+USE|ALL|
+REPLACE|<span style="FONT-SIZE: 16pt;color:#990000;font-family:楷体_GB2312">||
+REPLACE|</span>||
+
+MACRO|亵渎|MAIN|
+REPLACE|&nbsp;||
+PICK_TITLE|<div class="center"><h1>|</h1></div>|
+PICK_CONTENT|<div id="content">|</div>|
+USE|CONTENT|
+REPLACE|<br>||
+REPLACE|　　|^p^p　　|
+PUT|CONTENT|
+MAKEALL|
+TRIM|
+USE|ALL|
+
+MACRO|诛仙|MAIN|
+PICK_CONTENT|<pre>|</pre>|
+USE|CONTENT|
+TRIM|
+PICK_TITLE||^p|
+PICK_CONTENT|^p^p||
+TRIM|
+REPLACE|^p^p|##|
+REPLACE|^p||
+REPLACE|##|^p^p|
+PUT|CONTENT|
+MAKEALL|
+USE|ALL|
+
+MACRO|小兵传奇|MAIN|
+PICK_TITLE|<DIV class=title align=center>|</div>|
+PICK_CONTENT|<HR>|</TD>|
+USE|CONTENT|
+REPLACE|<p>|^p^p　　|
+REPLACE|^p||
+REPLACE|^p^p^p|^p^p|
+TRIM||
+ADDSTRING|　　||
+PUT|CONTENT|
+MAKEALL|
+USE|ALL|

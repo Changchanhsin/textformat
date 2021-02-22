@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txtHelp.Text" xml:space="preserve">
+    <value>【格式】
+
+标题：行首不空格，段前空两行，断后空两行
+正文：段前段后空一行，行首空两格（全角，GB18030:A1A1）
+小标题：段前空两行，段后空一行，行首空四格
+引用段落/插入段落：行首空三格
+右对齐：行首空八格
+分页：空五行
+
+
+【示例】
+
+三国演义
+
+
+　　　　第一回　宴桃园豪杰三结义　斩黄巾英雄首立功
+
+　　　滚滚长江东逝水，浪花淘尽英雄。
+　　　是非成败转头空。
+　　　青山依旧在，几度夕阳红。
+　　　白发渔樵江渚上，惯看秋月春风。
+　　　一壶浊酒喜相逢。
+　　　古今多少事，都付笑谈中。
+　　　　　　　——调寄《临江仙》
+
+　　话说天下大势，分久必合，合久必分。周末七国分争，并入于秦。及秦灭之后，楚、汉分争，又并入于汉。汉朝自高祖斩白蛇而起义，一统天下，后来光武中兴，传至献帝，遂分为三国。推其致乱之由，殆始于桓、灵二帝。桓帝禁锢善类，崇信宦官。及桓帝崩，灵帝即位，大将军窦武、太傅陈蕃共相辅佐。时有宦官曹节等弄权，窦武、陈蕃谋诛之，机事不密，反为所害，中涓自此愈横。
+
+　　建宁二年四月望日，帝御温德殿。方升座，殿角狂风骤起。只见一条大青蛇，从梁上飞将下来，蟠于椅上。帝惊倒，左右急救入宫，百官俱奔避。须臾，蛇不见了。忽然大雷大雨，加以冰雹，落到半夜方止，坏却房屋无数。建宁四年二月，洛阳地震；又海水泛溢，沿海居民，尽被大浪卷入海中。光和元年，雌鸡化雄。六月朔，黑气十余丈，飞入温德殿中。
+
+
+　　　　第二回　张翼德怒鞭督邮　何国舅谋诛宦竖
+
+　　且说董卓字仲颖，陇西临洮人也，官拜河东太守，自来骄傲。当日怠慢了玄德，张飞性发，便欲杀之。玄德与关公急止之曰；“他是朝廷命官，岂可擅杀？”飞曰：“若不杀这厮，反要在他部下听令，其实不甘！二兄要便住在此，我自投别处去也！”玄德曰：“我三人义同生死，岂可相离？不若都投别处去便了。”飞曰：“若如此，稍解吾恨。”
+
+　　于是三人连夜引军来投朱儁。儁待之甚厚，合兵一处，进讨张宝。是时曹操自跟皇甫嵩讨张梁，大战于曲阳。这里朱儁进攻张宝。张宝引贼众八九万，屯于山后。儁令玄德为其先锋，与贼对敌。张宝遣副将高升出马搦战，玄德使张飞击之。飞纵马挺矛，与升交战，不数合，刺升落马。玄德麾军直冲过去。张宝就马上披发仗剑，作起妖法。只见风雷大作，一股黑气从天而降，黑气中似有无限人马杀来。玄德连忙回军，军中大乱。败阵而归，与朱儁计议。儁曰：“彼用妖术，我来日可宰猪羊狗血，令军士伏于山头；候贼赶来，从高坡上泼之，其法可解。”玄德听令，拨关公、张飞各引军一千，伏于山后高冈之上，盛猪羊狗血并秽物准备。次日，张宝摇旗擂鼓，引军搦战，玄德出迎。交锋之际，张宝作法，风雷大作，飞砂走石，黑气漫天，滚滚人马，自天而下。玄德拨马便走，张宝驱兵赶来。将过山头，关、张伏军放起号炮，秽物齐泼。但见空中纸人草马，纷纷坠地；风雷顿息，砂石不飞。
+
+
+【转义符】
+^p=回车换行=0d0a
+^d=回车=0d
+^a=换行=0a
+
+
+【命令】
+
+MACRO|A|B|
+定义一个叫A的宏，可以用A来引用，B=COMP/部件:MAIN/主
+
+CALL|A|
+调用一个叫A的宏
+
+TRIM|
+清除前后的所有空格、回车、制表符等
+
+USE|A|
+将寄存器A中的内容作为当前编辑的内容,寄存器包括：TITLE/CONTENT/ALL/TEMP
+
+PUT|A|
+将当前内容放入寄存器A,寄存器包括：TITLE/CONTENT/ALL/TEMP
+
+MAKEALL|
+将寄存器TITLE和CONTENT连接起来放到寄存器ALL，中间空两行
+
+REPLACE|A|B|
+将选择文字或全文的A替换为B
+
+REMOVE|A|B|
+删除选择文字或全文中A和B之间的字符串
+
+ADDSTRING|A|B|
+在选择文字或全文前插入A，后补B
+
+PICK_TITLE|A|B|
+PICKTITLE|A|B|
+将A和B之间的字符串存入寄存器TITLE，并从当前内容中删除
+
+PICK_CONTENT|A|B|
+PICKCONTENT|A|B|
+将A和B之间的字符串存入寄存器CONTENT，并从当前内容中删除
+
+PICK|A|B|
+取得A和B之间的字符串作为当前编辑的内容</value>
+  </data>
+</root>

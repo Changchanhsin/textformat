@@ -387,4 +387,24 @@
     Private Sub ReplaceSingleToDoubleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReplaceSingleToDoubleToolStripMenuItem.Click
         txtMain.Text = txtMain.Text.Replace(vbCrLf, vbCrLf & vbCrLf)
     End Sub
+
+    Private Sub AddReferenceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddReferenceToolStripMenuItem.Click
+        txtMain.Paste(vbCrLf & "　　　")
+    End Sub
+
+    Private Sub AddRightAlignToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddRightAlignToolStripMenuItem.Click
+        txtMain.Paste(vbCrLf & "　　　　　　　　")
+    End Sub
+
+    Private Sub AddPageBreakToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddPageBreakToolStripMenuItem.Click
+        txtMain.Paste(vbCrLf & vbCrLf & vbCrLf & vbCrLf & vbCrLf)
+    End Sub
+
+    Private Sub FindToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FindToolStripMenuItem.Click
+        frmSearch.Show()
+    End Sub
+
+    Private Sub HelpToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem1.Click
+        frmHelp.Show()
+    End Sub
 End Class

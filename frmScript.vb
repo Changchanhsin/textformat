@@ -29,7 +29,14 @@
         Dim sName As String
 
         scpMacro.Clear()
-        f.Open(Application.StartupPath & "\Format.txt")
+        If My.Computer.FileSystem.FileExists(Application.StartupPath & "\Format.txt") Then
+            f.Open(Application.StartupPath & "\Format.txt")
+        ElseIf My.Computer.FileSystem.FileExists(Application.StartupPath & "\..\..\Format.txt") Then
+            f.Open(Application.StartupPath & "\..\..\Format.txt")
+        Else
+            MessageBox.Show("No script file found.", "error", MessageBoxButtons.OK)
+            Exit Sub
+        End If
         s = f.ReadLine()
         iMacroCount = 0
         sScript = ""
