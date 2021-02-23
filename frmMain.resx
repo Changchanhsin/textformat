@@ -117,10 +117,988 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ShiftJISToolStripMenuItem.Text" xml:space="preserve">
+    <value>Shift-&amp;JIS</value>
+  </data>
+  <data name="&gt;&gt;AddRightAlignToolStripMenuItem.Name" xml:space="preserve">
+    <value>AddRightAlignToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;GB18030ToolStripMenuItem.Name" xml:space="preserve">
+    <value>GB18030ToolStripMenuItem</value>
+  </data>
+  <data name="tssCodeset.Text" xml:space="preserve">
+    <value>tssCodeset</value>
+  </data>
+  <data name="ZoomToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Zoom</value>
+  </data>
+  <data name="&gt;&gt;AddNormalToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="AddPageBreakToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 44</value>
+  </data>
+  <data name="ToolStripMenuItem7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 6</value>
+  </data>
+  <data name="PrevTitleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 44</value>
+  </data>
+  <data name="AboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;About</value>
+  </data>
+  <data name="ToolStripMenuItem8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>464, 6</value>
+  </data>
+  <data name="&gt;&gt;ReplaceSingleToDoubleToolStripMenuItem.Name" xml:space="preserve">
+    <value>ReplaceSingleToDoubleToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;AsUTF8ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AddTitleToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+1</value>
+  </data>
+  <data name="&gt;&gt;ssrMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="UndoToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Undo</value>
+  </data>
+  <data name="OpenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="ssrMain.Text" xml:space="preserve">
+    <value>StatusStrip1</value>
+  </data>
+  <data name="&gt;&gt;PasteToolStripMenuItem.Name" xml:space="preserve">
+    <value>PasteToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;UndoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HelpToolStripMenuItem1.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="&gt;&gt;FontToolStripMenuItem.Name" xml:space="preserve">
+    <value>FontToolStripMenuItem</value>
+  </data>
+  <data name="AddTitleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 44</value>
+  </data>
+  <data name="&gt;&gt;menuMain.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="UndoToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Z</value>
+  </data>
+  <data name="NewToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+N</value>
+  </data>
+  <data name="&gt;&gt;PrevToolStripMenuItem.Name" xml:space="preserve">
+    <value>PrevToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;AddSubTitleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem3.Name" xml:space="preserve">
+    <value>ToolStripMenuItem3</value>
+  </data>
+  <data name="&gt;&gt;RemoveToolStripMenuItem.Name" xml:space="preserve">
+    <value>RemoveToolStripMenuItem</value>
+  </data>
+  <data name="AddRightAlignToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add R&amp;ight Align</value>
+  </data>
+  <data name="&gt;&gt;AsShiftJISToolStripMenuItem.Name" xml:space="preserve">
+    <value>AsShiftJISToolStripMenuItem</value>
+  </data>
+  <data name="tssCodeset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 31</value>
+  </data>
+  <data name="PasteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 44</value>
+  </data>
+  <data name="CopyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 44</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ZoomInToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HelpToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddSubTitleToolStripMenuItem.Name" xml:space="preserve">
+    <value>AddSubTitleToolStripMenuItem</value>
+  </data>
+  <data name="GotoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 44</value>
+  </data>
+  <data name="RestoreToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+OemQuestion</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RedoToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PasteToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+V</value>
+  </data>
+  <data name="&gt;&gt;CopyToolStripMenuItem.Name" xml:space="preserve">
+    <value>CopyToolStripMenuItem</value>
+  </data>
+  <data name="AboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 44</value>
+  </data>
+  <data name="txtMain.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="NextTitleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 44</value>
+  </data>
+  <data name="&gt;&gt;txtMain.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RemoveToolStripMenuItem.Text" xml:space="preserve">
+    <value>Trim Mulit-Lines</value>
+  </data>
+  <data name="ReplaceFullToHalfToolStripMenuItem.Text" xml:space="preserve">
+    <value>Replace Full to Half</value>
+  </data>
+  <data name="RedoToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Y</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="ExitToolStripMenuItem.Text" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="txtMain.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BIG5ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RemoveTrimToolStripMenuItem.Text" xml:space="preserve">
+    <value>Trim Line End</value>
+  </data>
+  <data name="StatusBarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 44</value>
+  </data>
+  <data name="&gt;&gt;SaveToolStripMenuItem.Name" xml:space="preserve">
+    <value>SaveToolStripMenuItem</value>
+  </data>
+  <data name="ZoomInToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>468, 44</value>
+  </data>
+  <data name="AddSubTitleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add SubTitle</value>
+  </data>
+  <data name="StatusBarToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Status Bar</value>
+  </data>
+  <data name="&gt;&gt;ReplaceSingleToDoubleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>665, 6</value>
+  </data>
+  <data name="AddRightAlignToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 44</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem9.Name" xml:space="preserve">
+    <value>ToolStripMenuItem9</value>
+  </data>
+  <data name="&gt;&gt;AddRightAlignToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ViewToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NextSubTitleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Next SubTitle</value>
+  </data>
+  <data name="&gt;&gt;ViewToolStripMenuItem.Name" xml:space="preserve">
+    <value>ViewToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;SelectAllToolStripMenuItem.Name" xml:space="preserve">
+    <value>SelectAllToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;AboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UTF8ToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;UTF-8</value>
+  </data>
+  <data name="FormatToolStripMenuItem.Text" xml:space="preserve">
+    <value>F&amp;ormat</value>
+  </data>
+  <data name="&gt;&gt;ManageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FindNextToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Next</value>
+  </data>
+  <data name="NewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="CutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 44</value>
+  </data>
+  <data name="ZoomToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 44</value>
+  </data>
+  <data name="ManageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 44</value>
+  </data>
+  <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 35</value>
+  </data>
+  <data name="&gt;&gt;OpenToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>12, 24</value>
+  </data>
+  <data name="AddPageBreakToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add &amp;Page break</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PrevSubTitleToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Shift+F2</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ZoomOutToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+OemMinus</value>
+  </data>
+  <data name="ReplaceSingleToDoubleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 44</value>
+  </data>
+  <data name="ExitToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+X</value>
+  </data>
+  <data name="&gt;&gt;CopyToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 35</value>
+  </data>
+  <data name="&gt;&gt;NextTitleToolStripMenuItem.Name" xml:space="preserve">
+    <value>NextTitleToolStripMenuItem</value>
+  </data>
+  <data name="RestoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="&gt;&gt;HelpToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>607, 193</value>
+  </data>
+  <data name="SelectAllToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 44</value>
+  </data>
+  <data name="menuMain.Text" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;FontToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RestoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>468, 44</value>
+  </data>
+  <data name="txtMain.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;AddReferenceToolStripMenuItem.Name" xml:space="preserve">
+    <value>AddReferenceToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;AboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>AboutToolStripMenuItem</value>
+  </data>
+  <data name="ssrMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 251</value>
+  </data>
+  <data name="RedoToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Redo</value>
+  </data>
+  <data name="ExitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PrevToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="AsBIG5ToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;BIG-5</value>
+  </data>
+  <data name="ssrMain.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;HelpToolStripMenuItem1.Name" xml:space="preserve">
+    <value>HelpToolStripMenuItem1</value>
+  </data>
+  <data name="ReplaceSingleToDoubleToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+6</value>
+  </data>
+  <data name="&gt;&gt;PrevTitleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PrevToolStripMenuItem.Text" xml:space="preserve">
+    <value>Pre&amp;v</value>
+  </data>
+  <data name="&gt;&gt;GotoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StatusBarToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GotoToolStripMenuItem.Name" xml:space="preserve">
+    <value>GotoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ChangeEncodingToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tssCodeset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PrevToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 44</value>
+  </data>
+  <data name="&gt;&gt;DeleteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CopyToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Copy</value>
+  </data>
+  <data name="FontToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Font...</value>
+  </data>
+  <data name="&gt;&gt;EditToolStripMenuItem.Name" xml:space="preserve">
+    <value>EditToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;RestoreToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RemoveTrimToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddPageBreakToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NextTitleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem10.Name" xml:space="preserve">
+    <value>ToolStripMenuItem10</value>
+  </data>
+  <data name="BIG5ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 44</value>
+  </data>
+  <data name="AsShiftJISToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 44</value>
+  </data>
+  <data name="ssrMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>607, 41</value>
+  </data>
+  <data name="&gt;&gt;AddNormalToolStripMenuItem.Name" xml:space="preserve">
+    <value>AddNormalToolStripMenuItem</value>
+  </data>
+  <data name="PrevTitleToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Shift+F1</value>
+  </data>
+  <data name="ZoomInToolStripMenuItem.Text" xml:space="preserve">
+    <value>Zoom &amp;in</value>
+  </data>
+  <data name="&gt;&gt;UndoToolStripMenuItem.Name" xml:space="preserve">
+    <value>UndoToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;tssCodeset.Name" xml:space="preserve">
+    <value>tssCodeset</value>
+  </data>
+  <data name="&gt;&gt;ssrMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PrevSubTitleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Prev SubTitle</value>
+  </data>
+  <data name="PrevTitleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Prev Title</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PrevSubTitleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 44</value>
+  </data>
+  <data name="&gt;&gt;txtMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FindToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddTitleToolStripMenuItem.Name" xml:space="preserve">
+    <value>AddTitleToolStripMenuItem</value>
+  </data>
+  <data name="txtMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PrevTitleToolStripMenuItem.Name" xml:space="preserve">
+    <value>PrevTitleToolStripMenuItem</value>
+  </data>
+  <data name="ZoomOutToolStripMenuItem.Text" xml:space="preserve">
+    <value>Zoom &amp;out</value>
+  </data>
+  <data name="OpenToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Open...</value>
+  </data>
+  <data name="AsUTF8ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 44</value>
+  </data>
+  <data name="&gt;&gt;SaveAsToolStripMenuItem.Name" xml:space="preserve">
+    <value>SaveAsToolStripMenuItem</value>
+  </data>
+  <data name="PrevToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Shift+F3</value>
+  </data>
+  <data name="FindToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 44</value>
+  </data>
+  <data name="EditToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 35</value>
+  </data>
+  <data name="&gt;&gt;AddReferenceToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 42</value>
+  </data>
+  <data name="SaveAsToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Shift+S</value>
+  </data>
+  <data name="&gt;&gt;NextSubTitleToolStripMenuItem.Name" xml:space="preserve">
+    <value>NextSubTitleToolStripMenuItem</value>
+  </data>
+  <data name="AddPageBreakToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+5</value>
+  </data>
+  <data name="FindNextToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 44</value>
+  </data>
+  <data name="AutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 44</value>
+  </data>
+  <data name="OpenToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+O</value>
+  </data>
+  <data name="ToolStripMenuItem9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>665, 6</value>
+  </data>
+  <data name="AsShiftJISToolStripMenuItem.Text" xml:space="preserve">
+    <value>Shift-&amp;JIS</value>
+  </data>
+  <data name="&gt;&gt;ShiftJISToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AsGB18030ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 44</value>
+  </data>
+  <data name="CutToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+X</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NextTitleToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+F1</value>
+  </data>
+  <data name="AddReferenceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 44</value>
+  </data>
+  <data name="&gt;&gt;ExitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SaveToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="AddNormalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add Normal</value>
+  </data>
+  <data name="&gt;&gt;NewToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FormatToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 35</value>
+  </data>
+  <data name="&gt;&gt;PrevToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ssrMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AddReferenceToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add &amp;Reference</value>
+  </data>
+  <data name="NextTitleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Next Title</value>
+  </data>
+  <data name="&gt;&gt;ReopenToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem4.Name" xml:space="preserve">
+    <value>ToolStripMenuItem4</value>
+  </data>
+  <data name="SaveAsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="ReplaceFullToHalfToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+7</value>
+  </data>
+  <data name="&gt;&gt;EditToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuMain.Name" xml:space="preserve">
+    <value>menuMain</value>
+  </data>
+  <data name="HelpToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 44</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem7.Name" xml:space="preserve">
+    <value>ToolStripMenuItem7</value>
+  </data>
+  <data name="CutToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cu&amp;t</value>
+  </data>
+  <data name="&gt;&gt;menuMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ManageToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Manage</value>
+  </data>
+  <data name="NextSubTitleToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+F2</value>
+  </data>
+  <data name="&gt;&gt;FormatToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AutoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Auto &amp;Warp</value>
+  </data>
+  <data name="FindNextToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>F3</value>
+  </data>
+  <data name="ReopenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="GB18030ToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;GB2312/GBK/GB18030</value>
+  </data>
+  <data name="UndoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 44</value>
+  </data>
+  <data name="AsGB18030ToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;GB2312/GBK/GB18030</value>
+  </data>
+  <data name="DeleteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 44</value>
+  </data>
+  <data name="&gt;&gt;StatusBarToolStripMenuItem.Name" xml:space="preserve">
+    <value>StatusBarToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;BIG5ToolStripMenuItem.Name" xml:space="preserve">
+    <value>BIG5ToolStripMenuItem</value>
+  </data>
+  <data name="RemoveTrimToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+9</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem1.Name" xml:space="preserve">
+    <value>ToolStripMenuItem1</value>
+  </data>
+  <data name="ReplaceSingleToDoubleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Replace Single to Double Line Interval</value>
+  </data>
+  <data name="&gt;&gt;FindNextToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AsUTF8ToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;UTF-8</value>
+  </data>
+  <data name="BIG5ToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;BIG-5</value>
+  </data>
+  <data name="&gt;&gt;ZoomToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AutoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SaveToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="HelpToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="AddTitleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add &amp;Title</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmMain</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem2.Name" xml:space="preserve">
+    <value>ToolStripMenuItem2</value>
+  </data>
+  <data name="&gt;&gt;UTF8ToolStripMenuItem.Name" xml:space="preserve">
+    <value>UTF8ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;RestoreToolStripMenuItem.Name" xml:space="preserve">
+    <value>RestoreToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;AddTitleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ViewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 35</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem5.Name" xml:space="preserve">
+    <value>ToolStripMenuItem5</value>
+  </data>
+  <data name="&gt;&gt;FileToolStripMenuItem.Name" xml:space="preserve">
+    <value>FileToolStripMenuItem</value>
+  </data>
+  <data name="ScriptToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 35</value>
+  </data>
+  <data name="ChangeEncodingToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Change Encoding</value>
+  </data>
+  <data name="&gt;&gt;ZoomInToolStripMenuItem.Name" xml:space="preserve">
+    <value>ZoomInToolStripMenuItem</value>
+  </data>
+  <data name="ToolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>447, 6</value>
+  </data>
+  <data name="EditToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="&gt;&gt;PrevSubTitleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UTF8ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ScriptToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CutToolStripMenuItem.Name" xml:space="preserve">
+    <value>CutToolStripMenuItem</value>
+  </data>
+  <data name="FindToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+F</value>
+  </data>
+  <data name="&gt;&gt;PasteToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ScriptToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Script</value>
+  </data>
+  <data name="FindNextToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;AsShiftJISToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ssrMain.Name" xml:space="preserve">
+    <value>ssrMain</value>
+  </data>
+  <data name="&gt;&gt;ZoomOutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AddNormalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 44</value>
+  </data>
+  <data name="RemoveToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+8</value>
+  </data>
+  <data name="&gt;&gt;RedoToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ReopenToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Reopen Encoding As</value>
+  </data>
+  <data name="FindToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Find And Replace...</value>
+  </data>
+  <data name="&gt;&gt;HelpToolStripMenuItem.Name" xml:space="preserve">
+    <value>HelpToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ReplaceFullToHalfToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="menuMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>607, 39</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItem8.Name" xml:space="preserve">
+    <value>ToolStripMenuItem8</value>
+  </data>
+  <data name="&gt;&gt;ScriptToolStripMenuItem.Name" xml:space="preserve">
+    <value>ScriptToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;OpenToolStripMenuItem.Name" xml:space="preserve">
+    <value>OpenToolStripMenuItem</value>
+  </data>
+  <data name="UTF8ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 44</value>
+  </data>
+  <data name="ToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>447, 6</value>
+  </data>
+  <data name="&gt;&gt;ManageToolStripMenuItem.Name" xml:space="preserve">
+    <value>ManageToolStripMenuItem</value>
+  </data>
+  <data name="GotoToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Goto</value>
+  </data>
+  <data name="menuMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ManageToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+M</value>
+  </data>
+  <data name="&gt;&gt;ZoomOutToolStripMenuItem.Name" xml:space="preserve">
+    <value>ZoomOutToolStripMenuItem</value>
+  </data>
+  <data name="AddRightAlignToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+4</value>
+  </data>
+  <data name="menuMain.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="SelectAllToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+A</value>
+  </data>
+  <data name="&gt;&gt;txtMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AsGB18030ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NewToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;New</value>
+  </data>
+  <data name="SaveAsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Save As...</value>
+  </data>
+  <data name="ToolStripMenuItem10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>665, 6</value>
+  </data>
+  <data name="&gt;&gt;FormatToolStripMenuItem.Name" xml:space="preserve">
+    <value>FormatToolStripMenuItem</value>
+  </data>
+  <data name="ChangeEncodingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="RemoveTrimToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 44</value>
+  </data>
+  <data name="AddSubTitleToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+2</value>
+  </data>
+  <data name="&gt;&gt;GB18030ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>447, 6</value>
+  </data>
+  <data name="AddSubTitleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 44</value>
+  </data>
+  <data name="txtMain.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>607, 292</value>
+  </data>
+  <data name="&gt;&gt;NextSubTitleToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ZoomToolStripMenuItem.Name" xml:space="preserve">
+    <value>ZoomToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;FindNextToolStripMenuItem.Name" xml:space="preserve">
+    <value>FindNextToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;txtMain.Name" xml:space="preserve">
+    <value>txtMain</value>
+  </data>
+  <data name="&gt;&gt;ChangeEncodingToolStripMenuItem.Name" xml:space="preserve">
+    <value>ChangeEncodingToolStripMenuItem</value>
+  </data>
+  <data name="ZoomOutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>468, 44</value>
+  </data>
+  <data name="NextSubTitleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 44</value>
+  </data>
+  <data name="&gt;&gt;AsBIG5ToolStripMenuItem.Name" xml:space="preserve">
+    <value>AsBIG5ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;SaveAsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FileToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SaveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="DeleteToolStripMenuItem.Text" xml:space="preserve">
+    <value>De&amp;lete</value>
+  </data>
+  <data name="&gt;&gt;AutoToolStripMenuItem.Name" xml:space="preserve">
+    <value>AutoToolStripMenuItem</value>
+  </data>
+  <data name="AddNormalToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+0</value>
+  </data>
+  <data name="&gt;&gt;ReopenToolStripMenuItem.Name" xml:space="preserve">
+    <value>ReopenToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;AddPageBreakToolStripMenuItem.Name" xml:space="preserve">
+    <value>AddPageBreakToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;AsGB18030ToolStripMenuItem.Name" xml:space="preserve">
+    <value>AsGB18030ToolStripMenuItem</value>
+  </data>
+  <data name="AddReferenceToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+3</value>
+  </data>
+  <data name="RedoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>450, 44</value>
+  </data>
+  <data name="&gt;&gt;ViewToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CopyToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+C</value>
+  </data>
+  <data name="PasteToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Paste</value>
+  </data>
+  <data name="&gt;&gt;AsUTF8ToolStripMenuItem.Name" xml:space="preserve">
+    <value>AsUTF8ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;PrevSubTitleToolStripMenuItem.Name" xml:space="preserve">
+    <value>PrevSubTitleToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;SelectAllToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FontToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 44</value>
+  </data>
+  <data name="&gt;&gt;ShiftJISToolStripMenuItem.Name" xml:space="preserve">
+    <value>ShiftJISToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;DeleteToolStripMenuItem.Name" xml:space="preserve">
+    <value>DeleteToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;NewToolStripMenuItem.Name" xml:space="preserve">
+    <value>NewToolStripMenuItem</value>
+  </data>
+  <data name="ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 6</value>
+  </data>
+  <data name="ReplaceFullToHalfToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 44</value>
+  </data>
+  <data name="GB18030ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 44</value>
+  </data>
+  <data name="&gt;&gt;ReplaceFullToHalfToolStripMenuItem.Name" xml:space="preserve">
+    <value>ReplaceFullToHalfToolStripMenuItem</value>
+  </data>
+  <data name="ZoomInToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+Oemplus</value>
+  </data>
+  <data name="&gt;&gt;RemoveTrimToolStripMenuItem.Name" xml:space="preserve">
+    <value>RemoveTrimToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;RemoveToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RemoveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 44</value>
+  </data>
+  <data name="txtMain.MaxLength" type="System.Int32, mscorlib">
+    <value>33554432</value>
+  </data>
+  <data name="&gt;&gt;AsBIG5ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ShiftJISToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 44</value>
+  </data>
+  <data name="SelectAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>Select &amp;All</value>
+  </data>
+  <data name="AsBIG5ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 44</value>
+  </data>
+  <data name="&gt;&gt;FindToolStripMenuItem.Name" xml:space="preserve">
+    <value>FindToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;RedoToolStripMenuItem.Name" xml:space="preserve">
+    <value>RedoToolStripMenuItem</value>
+  </data>
+  <data name="SaveToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+S</value>
+  </data>
+  <data name="&gt;&gt;ExitToolStripMenuItem.Name" xml:space="preserve">
+    <value>ExitToolStripMenuItem</value>
+  </data>
+  <metadata name="ssrMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>216, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="menuMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="ssrMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>216, 17</value>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-Hans</value>
   </metadata>
 </root>

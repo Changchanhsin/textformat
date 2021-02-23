@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 193</value>
+  </data>
+  <data name="NewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 44</value>
+  </data>
+  <data name="NewToolStripMenuItem.Text" xml:space="preserve">
+    <value>新建(&amp;N)</value>
+  </data>
+  <data name="OpenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 44</value>
+  </data>
+  <data name="OpenToolStripMenuItem.Text" xml:space="preserve">
+    <value>打开(&amp;O)...</value>
+  </data>
+  <data name="ReopenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 44</value>
+  </data>
+  <data name="ReopenToolStripMenuItem.Text" xml:space="preserve">
+    <value>按指定编码字符集重新打开(&amp;R)</value>
+  </data>
+  <data name="ToolStripMenuItem7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>464, 6</value>
+  </data>
+  <data name="SaveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 44</value>
+  </data>
+  <data name="SaveToolStripMenuItem.Text" xml:space="preserve">
+    <value>保存(&amp;S)</value>
+  </data>
+  <data name="ChangeEncodingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 44</value>
+  </data>
+  <data name="ChangeEncodingToolStripMenuItem.Text" xml:space="preserve">
+    <value>改变当前编码字符集(&amp;C)</value>
+  </data>
+  <data name="SaveAsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 44</value>
+  </data>
+  <data name="SaveAsToolStripMenuItem.Text" xml:space="preserve">
+    <value>另存为(&amp;A)...</value>
+  </data>
+  <data name="ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>464, 6</value>
+  </data>
+  <data name="ExitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 44</value>
+  </data>
+  <data name="ExitToolStripMenuItem.Text" xml:space="preserve">
+    <value>退出(&amp;X)</value>
+  </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 38</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>文件(&amp;F)</value>
+  </data>
+  <data name="UndoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="UndoToolStripMenuItem.Text" xml:space="preserve">
+    <value>撤销(&amp;U)</value>
+  </data>
+  <data name="RedoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="RedoToolStripMenuItem.Text" xml:space="preserve">
+    <value>重做(&amp;R)</value>
+  </data>
+  <data name="ToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 6</value>
+  </data>
+  <data name="CutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="CutToolStripMenuItem.Text" xml:space="preserve">
+    <value>剪切(&amp;T)</value>
+  </data>
+  <data name="CopyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="CopyToolStripMenuItem.Text" xml:space="preserve">
+    <value>复制(&amp;C)</value>
+  </data>
+  <data name="PasteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="PasteToolStripMenuItem.Text" xml:space="preserve">
+    <value>粘贴(&amp;P)</value>
+  </data>
+  <data name="DeleteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="DeleteToolStripMenuItem.Text" xml:space="preserve">
+    <value>删除(&amp;L)</value>
+  </data>
+  <data name="ToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 6</value>
+  </data>
+  <data name="FindToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="FindToolStripMenuItem.Text" xml:space="preserve">
+    <value>查找和替换(&amp;F)</value>
+  </data>
+  <data name="FindNextToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="FindNextToolStripMenuItem.Text" xml:space="preserve">
+    <value>查找下一个(&amp;N)</value>
+  </data>
+  <data name="PrevToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="PrevToolStripMenuItem.Text" xml:space="preserve">
+    <value>查找上一个(&amp;V)</value>
+  </data>
+  <data name="NextTitleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 44</value>
+  </data>
+  <data name="NextTitleToolStripMenuItem.Text" xml:space="preserve">
+    <value>下一个标题</value>
+  </data>
+  <data name="PrevTitleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 44</value>
+  </data>
+  <data name="PrevTitleToolStripMenuItem.Text" xml:space="preserve">
+    <value>上一个标题</value>
+  </data>
+  <data name="ToolStripMenuItem8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>457, 6</value>
+  </data>
+  <data name="NextSubTitleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 44</value>
+  </data>
+  <data name="NextSubTitleToolStripMenuItem.Text" xml:space="preserve">
+    <value>下一个子标题</value>
+  </data>
+  <data name="PrevSubTitleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 44</value>
+  </data>
+  <data name="PrevSubTitleToolStripMenuItem.Text" xml:space="preserve">
+    <value>上一个子标题</value>
+  </data>
+  <data name="GotoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="GotoToolStripMenuItem.Text" xml:space="preserve">
+    <value>转到(&amp;G)</value>
+  </data>
+  <data name="ToolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 6</value>
+  </data>
+  <data name="SelectAllToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 44</value>
+  </data>
+  <data name="SelectAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>全选(&amp;A)\</value>
+  </data>
+  <data name="EditToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 38</value>
+  </data>
+  <data name="EditToolStripMenuItem.Text" xml:space="preserve">
+    <value>编辑(&amp;E)</value>
+  </data>
+  <data name="ManageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 44</value>
+  </data>
+  <data name="ManageToolStripMenuItem.Text" xml:space="preserve">
+    <value>管理脚本(&amp;M)...</value>
+  </data>
+  <data name="ToolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>542, 6</value>
+  </data>
+  <data name="AddNormalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 44</value>
+  </data>
+  <data name="AddNormalToolStripMenuItem.Text" xml:space="preserve">
+    <value>添加正文段落</value>
+  </data>
+  <data name="AddTitleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 44</value>
+  </data>
+  <data name="AddTitleToolStripMenuItem.Text" xml:space="preserve">
+    <value>添加标题(&amp;T)</value>
+  </data>
+  <data name="AddSubTitleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 44</value>
+  </data>
+  <data name="AddSubTitleToolStripMenuItem.Text" xml:space="preserve">
+    <value>添加子标题</value>
+  </data>
+  <data name="AddReferenceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 44</value>
+  </data>
+  <data name="AddReferenceToolStripMenuItem.Text" xml:space="preserve">
+    <value>添加引用(&amp;R)</value>
+  </data>
+  <data name="AddRightAlignToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 44</value>
+  </data>
+  <data name="AddRightAlignToolStripMenuItem.Text" xml:space="preserve">
+    <value>添加右对齐段落(&amp;I)</value>
+  </data>
+  <data name="AddPageBreakToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 44</value>
+  </data>
+  <data name="AddPageBreakToolStripMenuItem.Text" xml:space="preserve">
+    <value>添加分页(&amp;P)</value>
+  </data>
+  <data name="ToolStripMenuItem9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>542, 6</value>
+  </data>
+  <data name="RemoveTrimToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 44</value>
+  </data>
+  <data name="RemoveTrimToolStripMenuItem.Text" xml:space="preserve">
+    <value>去除行尾空格</value>
+  </data>
+  <data name="RemoveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 44</value>
+  </data>
+  <data name="RemoveToolStripMenuItem.Text" xml:space="preserve">
+    <value>去除多余空行</value>
+  </data>
+  <data name="ToolStripMenuItem10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>542, 6</value>
+  </data>
+  <data name="ReplaceFullToHalfToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 44</value>
+  </data>
+  <data name="ReplaceFullToHalfToolStripMenuItem.Text" xml:space="preserve">
+    <value>替换全角字母数字符号为半角</value>
+  </data>
+  <data name="ReplaceSingleToDoubleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>545, 44</value>
+  </data>
+  <data name="ReplaceSingleToDoubleToolStripMenuItem.Text" xml:space="preserve">
+    <value>替换行间隔为双行</value>
+  </data>
+  <data name="ScriptToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 38</value>
+  </data>
+  <data name="ScriptToolStripMenuItem.Text" xml:space="preserve">
+    <value>脚本(&amp;S)</value>
+  </data>
+  <data name="AutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 44</value>
+  </data>
+  <data name="AutoToolStripMenuItem.Text" xml:space="preserve">
+    <value>自动换行(&amp;W)</value>
+  </data>
+  <data name="FontToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 44</value>
+  </data>
+  <data name="FontToolStripMenuItem.Text" xml:space="preserve">
+    <value>字体(&amp;F)...</value>
+  </data>
+  <data name="FormatToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 38</value>
+  </data>
+  <data name="FormatToolStripMenuItem.Text" xml:space="preserve">
+    <value>格式(&amp;O)</value>
+  </data>
+  <data name="ZoomInToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>524, 44</value>
+  </data>
+  <data name="ZoomInToolStripMenuItem.Text" xml:space="preserve">
+    <value>放大(&amp;I)</value>
+  </data>
+  <data name="ZoomOutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>524, 44</value>
+  </data>
+  <data name="ZoomOutToolStripMenuItem.Text" xml:space="preserve">
+    <value>缩小(&amp;O)</value>
+  </data>
+  <data name="RestoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>524, 44</value>
+  </data>
+  <data name="RestoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>恢复默认缩放</value>
+  </data>
+  <data name="ZoomToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 44</value>
+  </data>
+  <data name="ZoomToolStripMenuItem.Text" xml:space="preserve">
+    <value>缩放(&amp;Z)</value>
+  </data>
+  <data name="StatusBarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 44</value>
+  </data>
+  <data name="StatusBarToolStripMenuItem.Text" xml:space="preserve">
+    <value>状态栏(&amp;S)</value>
+  </data>
+  <data name="ViewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 38</value>
+  </data>
+  <data name="ViewToolStripMenuItem.Text" xml:space="preserve">
+    <value>查看(&amp;V)</value>
+  </data>
+  <data name="HelpToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 44</value>
+  </data>
+  <data name="HelpToolStripMenuItem1.Text" xml:space="preserve">
+    <value>查看帮助(&amp;H)</value>
+  </data>
+  <data name="AboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 44</value>
+  </data>
+  <data name="AboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>关于(&amp;A)</value>
+  </data>
+  <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 38</value>
+  </data>
+  <data name="HelpToolStripMenuItem.Text" xml:space="preserve">
+    <value>帮助(&amp;H)</value>
+  </data>
+  <data name="menuMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 42</value>
+  </data>
+  <data name="ssrMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 413</value>
+  </data>
+  <data name="ssrMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 41</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>772, 454</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>文本</value>
+  </data>
+</root>

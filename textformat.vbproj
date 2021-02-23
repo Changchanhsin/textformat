@@ -121,7 +121,16 @@
     <EmbeddedResource Include="frmHelp.resx">
       <DependentUpon>frmHelp.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.en.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.zh-CN.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.zh-Hans.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmScript.resx">
