@@ -1,4 +1,6 @@
-﻿Public Class frmMain
+﻿Imports System.ComponentModel
+
+Public Class frmMain
     Dim isUntitled = True
     Dim isChanged = False
     Dim currFilename = ""
@@ -20,7 +22,7 @@
             Me.Text = currFilename
         End If
         If isChanged = True Then
-            Me.Text = Me.Text & " *"
+            Me.Text = "*" & Me.Text
         End If
     End Sub
 
@@ -125,22 +127,22 @@
 
     Private Sub BIG5ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BIG5ToolStripMenuItem.Click
         currCodeset = charcodeBIG5
-        updateCodeset()
+        UpdateCodeset()
     End Sub
 
     Private Sub GB18030ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GB18030ToolStripMenuItem.Click
         currCodeset = charcodeGB
-        updateCodeset()
+        UpdateCodeset()
     End Sub
 
     Private Sub ShiftJISToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShiftJISToolStripMenuItem.Click
         currCodeset = charcodeSJIS
-        updateCodeset()
+        UpdateCodeset()
     End Sub
 
     Private Sub UTF8ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UTF8ToolStripMenuItem.Click
         currCodeset = charcodeUTF8
-        updateCodeset()
+        UpdateCodeset()
     End Sub
 
     Private Sub FontToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FontToolStripMenuItem.Click
@@ -406,5 +408,19 @@
 
     Private Sub HelpToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem1.Click
         frmHelp.Show()
+    End Sub
+
+    Private Sub frmMain_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        If isChanged = True Then
+            If (MessageBox.Show("Text changed, Save ?", "Process Closing...", MessageBoxButtons.OKCancel) <> DialogResult.Cancel) Then
+                If (isUntitled = True) Then
+                    If sfd.ShowDialog() = DialogResult.Cancel Then
+                        Exit Sub
+                    End If
+                    currFilename = sfd.FileName
+                End If
+                SaveFile()
+            End If
+        End If
     End Sub
 End Class
