@@ -117,7 +117,7 @@ Partial Class frmScript
         Me.Controls.Add(Me.lstMicro)
         Me.Controls.Add(Me.txtScript)
         Me.Controls.Add(Me.cmdRun)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmScript"
         Me.Text = "Script"
         Me.TopMost = True

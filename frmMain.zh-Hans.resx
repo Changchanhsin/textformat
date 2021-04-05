@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 193</value>
+    <value>1463, 193</value>
   </data>
   <data name="NewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>467, 44</value>
@@ -170,7 +170,7 @@
     <value>退出(&amp;X)</value>
   </data>
   <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 38</value>
+    <value>111, 35</value>
   </data>
   <data name="FileToolStripMenuItem.Text" xml:space="preserve">
     <value>文件(&amp;F)</value>
@@ -278,7 +278,7 @@
     <value>全选(&amp;A)\</value>
   </data>
   <data name="EditToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 38</value>
+    <value>111, 35</value>
   </data>
   <data name="EditToolStripMenuItem.Text" xml:space="preserve">
     <value>编辑(&amp;E)</value>
@@ -359,25 +359,25 @@
     <value>替换行间隔为双行</value>
   </data>
   <data name="ScriptToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 38</value>
+    <value>112, 35</value>
   </data>
   <data name="ScriptToolStripMenuItem.Text" xml:space="preserve">
     <value>脚本(&amp;S)</value>
   </data>
   <data name="AutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 44</value>
+    <value>283, 44</value>
   </data>
   <data name="AutoToolStripMenuItem.Text" xml:space="preserve">
     <value>自动换行(&amp;W)</value>
   </data>
   <data name="FontToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 44</value>
+    <value>283, 44</value>
   </data>
   <data name="FontToolStripMenuItem.Text" xml:space="preserve">
     <value>字体(&amp;F)...</value>
   </data>
   <data name="FormatToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 38</value>
+    <value>118, 35</value>
   </data>
   <data name="FormatToolStripMenuItem.Text" xml:space="preserve">
     <value>格式(&amp;O)</value>
@@ -412,41 +412,44 @@
   <data name="StatusBarToolStripMenuItem.Text" xml:space="preserve">
     <value>状态栏(&amp;S)</value>
   </data>
+  <data name="ShowScriptToolStripMenuItem.Text" xml:space="preserve">
+    <value>脚本</value>
+  </data>
   <data name="ViewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 38</value>
+    <value>114, 35</value>
   </data>
   <data name="ViewToolStripMenuItem.Text" xml:space="preserve">
     <value>查看(&amp;V)</value>
   </data>
   <data name="HelpToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 44</value>
+    <value>278, 44</value>
   </data>
   <data name="HelpToolStripMenuItem1.Text" xml:space="preserve">
     <value>查看帮助(&amp;H)</value>
   </data>
   <data name="AboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 44</value>
+    <value>278, 44</value>
   </data>
   <data name="AboutToolStripMenuItem.Text" xml:space="preserve">
     <value>关于(&amp;A)</value>
   </data>
   <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 38</value>
+    <value>117, 35</value>
   </data>
   <data name="HelpToolStripMenuItem.Text" xml:space="preserve">
     <value>帮助(&amp;H)</value>
   </data>
   <data name="menuMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 42</value>
+    <value>1463, 39</value>
   </data>
   <data name="ssrMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 413</value>
+    <value>0, 787</value>
   </data>
   <data name="ssrMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>772, 41</value>
+    <value>1463, 41</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>772, 454</value>
+    <value>1463, 828</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>文本</value>

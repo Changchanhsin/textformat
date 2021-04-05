@@ -87,6 +87,7 @@ Partial Class frmMain
         Me.ZoomOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RestoreToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ShowScriptToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -404,7 +405,7 @@ Partial Class frmMain
         'ViewToolStripMenuItem
         '
         resources.ApplyResources(Me.ViewToolStripMenuItem, "ViewToolStripMenuItem")
-        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ZoomToolStripMenuItem, Me.StatusBarToolStripMenuItem})
+        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ZoomToolStripMenuItem, Me.StatusBarToolStripMenuItem, Me.ShowScriptToolStripMenuItem})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
         '
         'ZoomToolStripMenuItem
@@ -434,6 +435,13 @@ Partial Class frmMain
         Me.StatusBarToolStripMenuItem.Checked = True
         Me.StatusBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.StatusBarToolStripMenuItem.Name = "StatusBarToolStripMenuItem"
+        '
+        'ShowScriptToolStripMenuItem
+        '
+        resources.ApplyResources(Me.ShowScriptToolStripMenuItem, "ShowScriptToolStripMenuItem")
+        Me.ShowScriptToolStripMenuItem.Checked = True
+        Me.ShowScriptToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.ShowScriptToolStripMenuItem.Name = "ShowScriptToolStripMenuItem"
         '
         'HelpToolStripMenuItem
         '
@@ -550,4 +558,5 @@ Partial Class frmMain
     Friend WithEvents ReplaceFullToHalfToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReplaceSingleToDoubleToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ShowScriptToolStripMenuItem As ToolStripMenuItem
 End Class

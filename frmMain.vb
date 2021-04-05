@@ -55,6 +55,7 @@ Public Class frmMain
 
     Private Sub ManageToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ManageToolStripMenuItem.Click
         frmScript.Show()
+        frmMain_Move(sender, e)
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -68,6 +69,13 @@ Public Class frmMain
         UpdateFormTitle()
         UpdateCodeset()
         frmScript.Show()
+        frmMain_Move(sender, e)
+        Dim a As String
+        a = Microsoft.VisualBasic.Command
+        If a <> "" Then
+            currFilename = a
+            LoadFile()
+        End If
     End Sub
 
     Private Sub frmMain_Resize(sender As Object, e As EventArgs) Handles Me.Resize
@@ -421,6 +429,26 @@ Public Class frmMain
                 End If
                 SaveFile()
             End If
+        End If
+    End Sub
+
+    Private Sub frmMain_Move(sender As Object, e As EventArgs) Handles Me.Move
+        If Me.Left > frmScript.Width Then
+            frmScript.Left = Me.Left - frmScript.Width
+            frmScript.Top = Me.Top
+        Else
+            frmScript.Left = Me.Left + Me.Width - frmScript.Width
+            frmScript.Top = Me.Top + 64
+        End If
+    End Sub
+
+    Private Sub ShowScriptToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowScriptToolStripMenuItem.Click
+        If ShowScriptToolStripMenuItem.Checked = True Then
+            ShowScriptToolStripMenuItem.Checked = False
+            frmScript.Hide()
+        Else
+            ShowScriptToolStripMenuItem.Checked = True
+            frmScript.Show()
         End If
     End Sub
 End Class
