@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Text Reader</title>
+</head>
+<style type="text/css">
+body{
+  margin:0px;
+  padding:0px;
+  }
+#control{
+  border: 1px solid #000;
+  border-bottom-right-radius:14px;
+  border-top--right-radius:14px;
+  background:black;
+  color:white;
+  padding:2px;
+  position:fixed;
+  top:0px;left:0px;
+  box-shadow:4px 4px 16px #000
+  }
+</style>
+<style type="text/css" id="cssNormal">
+body{background:white;color:black}
+h1{font-size:200%;text-align:center}
+h2{font-size:120%;font-weight:bold;text-align:left;text-indent:4em}
+p {text-indent:2em;font-family:SimSun;text-align:justify}
+blockquote{background:#FFF;font-size:90%;font-family:SimFang}
+.dialog{color:brown}
+.note  {color:gray}
+.name  {font-style:italic;font-weight:bold;color:darkblue}
+.foot  {ont-style:italic;font-size:80%;text-align:right}
+.split {border:0;border-bottom:1px solid black;margin:0}
+</style>
+<style type="text/css" id="cssDark">
+body{background:#333;color:white}
+h1{font-size:200%;text-align:center;color:white}
+h2{font-size:120%;font-weight:bold;text-align:left;text-indent:4em;color:white}
+p{text-indent:2em;font-family:SimSun;text-align:justify;color:white}
+blockquote{font-size:90%;font-family:SimFang}
+.dialog{color:yellow}
+.note{color:lightgray;}
+.name{font-style:italic;font-weight:bold;color:lightblue}
+.foot{ont-style:italic;font-size:80%;text-align:right;color:white}
+.split{border:0;border-bottom:1px solid black;margin:0;color:white}
+</style>
+<body margin=0 padding=0 onload="updatetext();">
+  <div id=control>
+    <select id="codepage" size="1" onchange="updatetext();">
+      <option selected value="gb18030">GB 18030</option>
+      <option value="utf-8">UTF-8</option>
+      <option value="big5">BIG-5</option>
+      <option value="sjis">Shfit JIS</option>
+    </select>
+    <select id="style" size="1" onchange="updatecss();">
+      <option selected value="cssNormal">Normal</option>
+      <option value="cssDark">Dark</option>
+    </select>
+    <input type="file" id="file" width=10000 onchange="updatetext()">
+    <input type=button style="border-top--right-radius:15px;border-bottom-right-radius:15px;" id=actcontrol onclick="if(document.getElementById('control').offsetLeft==0){document.getElementById('control').style.left=-document.getElementById('control').offsetWidth+document.getElementById('actcontrol').offsetWidth+6+'px';document.getElementById('actcontrol').value='>';}else{document.getElementById('control').style.left='0px';document.getElementById('actcontrol').value='<';}" value="<">
+  </div>
+  <div style="margin:4px;padding:4px;" id="out"></div>
+</body>
+<script>
+  updatecss();
+  function updatecss(){
+    var scripts = ["cssNormal", "cssDark"];
+
+    for(i=0; i<scripts.length; i++){
+      if(scripts[i]==document.getElementById('style').value){
+        document.getElementById(scripts[i]).outerHTML = document.getElementById(scripts[i]).outerHTML.replace(/unused/g,"style");
+      }else{
+        document.getElementById(scripts[i]).outerHTML = document.getElementById(scripts[i]).outerHTML.replace(/style/g,"unused");
+      }
+    }
+
+  }
+  function updatetext(){
+    var codepage = document.getElementById('codepage');
+
+    var out = document.getElementById('out');
+    var file = document.getElementById('file').files[0];
+    var reader = new FileReader();
+
+    reader.readAsText(file, codepage.value);
+    reader.onload = function() {
+      var html = '';
+
+      html = this.result;
+
+      html = html.replace(/\u0020\u0020/g," ");
+      html = html.replace(/\r\n/g,"$");
+      html = html.replace(/\n/g,"$");
+      html = html.replace(/\r/g,"$");
+
+      html = html.replace(/(\$\$\s\s\s\s\s\s\s\s)([^\$<]*)/g,"<p class=foot>$2</p>");
+      html = html.replace(/(\$\s\s\s\s\s)([^\$<]*)/g,"<blockquote>$2</blockquote>");
+      html = html.replace(/(\$\$\s\s\s\s)([^\$<]*)/g,"<h2>$2</h2>");
+      html = html.replace(/(\$\s\s\s)([^\$<]*)/g,"<blockquote>$2</blockquote>");
+      html = html.replace(/<\/blockquote><blockquote>/g,"<br/>");
+      html = html.replace(/(\$\$\s\s)([^\$<]*)/g,"<p>$2</p>");
+      html = html.replace(/(\$\s\s)([^\$<]*)/g,"<p>$2</p>");
+      html = html.replace(/(\$\$\$)([^\$<]*)/g,"<h1>$2</h1>");
+      html = html.replace(/\$----([^\$<]*)/g,"<hr class=split />");
+      html = html.replace(/\$/g,"<br/>");
+      html = html.replace(/<br\/><br\/>/g,"<br/>");
+      html = html.replace(/<\/p><br\/>/g,"<\/p>");
+      html = html.replace(/([^<]*)/,"<h1>$1</h1>");
+
+      html = html.replace(/\u201c/g,"\u201c<font class=dialog>"); //¡°¡±
+      html = html.replace(/\u201d/g,"</font>\u201d");
+      html = html.replace(/\u2018/g,"\u2018<font class=dialog>"); //¡®¡¯
+      html = html.replace(/\u2019/g,"</font>\u2019");
+      html = html.replace(/\uff08/g,"<font class=note>\uff08"); //£¨£©
+      html = html.replace(/\uff09/g,"\uff09</font>");
+      html = html.replace(/\u300a/g,"<font class=name>\u300a"); //¡¶ ¡·
+      html = html.replace(/\u300b/g,"\u300b</font>");
+      html = html.replace(/\u3008/g,"<font class=name>\u3008"); //¡´ ¡µ
+      html = html.replace(/\u3009/g,"\u3009</font>");
+      html = html.replace(/\u3010/g,"<font class=note>\u3010"); //¡¾ ¡¿
+      html = html.replace(/\u3011/g,"\u3011</font>");
+      html = html.replace(/\u300e/g,"\u300e<font class=dialog>"); //¡º ¡»
+      html = html.replace(/\u300f/g,"</font>\u300f");
+      html = html.replace(/\u300c/g,"\u300c<font class=dialog>"); //¡¸ ¡¹
+      html = html.replace(/\u300d/g,"</font>\u300d");
+      html = html.replace(/\ufe43/g,"\ufe43<font class=dialog>"); //¦ê ¦ë
+      html = html.replace(/\ufe44/g,"</font>\ufe44");
+      html = html.replace(/\u3014/g,"<font class=name>\u3014"); //¡² ¡³
+      html = html.replace(/\u3015/g,"\u3015</font>");
+
+      out.innerHTML = "<br/><br/>"+html;
+    }
+  }
+</script>
+</html>
