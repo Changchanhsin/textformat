@@ -24,19 +24,23 @@ body{
 
 <style type="text/css" id="cssNormal">
 body{background:white;color:black}
+#out{margin:4px;padding:4px;}
 h1{font-size:200%;text-align:center}
 h2{font-size:120%;font-weight:bold;text-align:left;text-indent:4em}
 p {text-indent:2em;font-family:SimSun;text-align:justify}
 blockquote{background:#FFF;font-size:90%;font-family:SimFang}
-.dialog{color:brown}
+.dialog{display:inline;color:brown}
 .note  {color:gray}
 .name  {font-style:italic;font-weight:bold;color:darkblue}
 .foot  {ont-style:italic;font-size:80%;text-align:right}
 .split {border:0;border-bottom:1px solid black;margin:0}
+.start{display:inline;}
+.end{display:inline;}
 </style>
 
 <style type="text/css" id="cssDark">
 body{background:#333;color:green}
+#out{margin:4px;padding:4px;}
 h1{font-size:200%;text-align:center;color:white}
 h2{font-size:120%;font-weight:bold;text-align:left;text-indent:4em;color:white}
 p{text-indent:2em;font-family:SimSun;text-align:justify;font-weight:bold;color:lightgreen}
@@ -50,6 +54,7 @@ blockquote{font-size:90%;font-family:SimFang}
 
 <style type="text/css" id="cssBlue">
 body{background:#007;color:yellow}
+#out{margin:4px;padding:4px;}
 h1{font-size:200%;text-align:center;color:white}
 h2{font-size:120%;font-weight:bold;text-align:left;text-indent:4em;color:white}
 p{text-indent:2em;font-family:SimSun;text-align:justify;color:yellow}
@@ -61,8 +66,29 @@ blockquote{font-size:90%;font-family:SimFang}
 .split{border:0;border-bottom:1px solid black;margin:0;color:white}
 </style>
 
+<style type="text/css" id="cssVertical">
+body{background:#DEF;color:black;margin:0px;padding:0px}
+#out{writing-mode:vertical-rl;height:calc(90% - 50px);margin:0px;padding-top:50px;line-height:175%}
+h1{font-size:100%;text-align:left;color:black;margin:0}
+h2{font-size:100%;font-weight:bold;text-align:left;text-indent:4em;color:black;margin:0}
+p{font-family:SimSun;text-align:justify;color:black;margin:0}
+blockquote{font-size:100%;font-family:SimSun;margin:0;margin-top:2em}
+.dialog{color:blue}
+.note{font-size:50%;color:black}
+.name{text-decoration-line: underline;text-decoration-style:solid}
+.book{text-decoration-line: underline;text-decoration-style:wavy}
+.foot{ont-style:italic;font-size:100%;text-align:right;color:gray}
+.split{border:0;border-bottom:1px solid black;margin:0;color:gray}
+.vertchinese{position:relative}
+.startdialog{position:absolute;left:0.2em;top:-0.5em;visibility:hidden}
+.enddialog{position:absolute;left:-1.2em;top:-0.5em;visibility:hidden}
+.startnote{position:absolute;visibility:hidden}
+.endnote{position:absolute;visibility:hidden}
+.punctuation{position:absolute;left:0.05em;top:-0.5em}
+</style>
+
 <body margin=0 padding=0 onload="updatetext();">
-  <div id=control>
+  <div id=control style="transition:all1s linear;">
     <select id="codepage" size="1" onchange="updatetext();">
       <option selected value="gb18030">GB 18030</option>
       <option value="utf-8">UTF-8</option>
@@ -73,16 +99,17 @@ blockquote{font-size:90%;font-family:SimFang}
       <option selected value="cssNormal">Normal</option>
       <option value="cssDark">Dark</option>
       <option value="cssBlue">Blue</option>
+      <option value="cssVertical">Vertical</option>
     </select>
     <input type="file" id="file" width=10000 onchange="updatetext()">
     <input type=button style="border-top--right-radius:15px;border-bottom-right-radius:15px;" id=actcontrol onclick="if(document.getElementById('control').offsetLeft==0){document.getElementById('control').style.left=-document.getElementById('control').offsetWidth+document.getElementById('actcontrol').offsetWidth+6+'px';document.getElementById('actcontrol').value='>';}else{document.getElementById('control').style.left='0px';document.getElementById('actcontrol').value='<';}" value="<">
   </div>
-  <div style="margin:4px;padding:4px;" id="out"></div>
+  <div id="out"></div>
 </body>
 <script>
   updatecss();
   function updatecss(){
-    var scripts = ["cssNormal", "cssDark", "cssBlue"];
+    var scripts = ["cssNormal", "cssDark", "cssBlue", "cssVertical"];
 
     for(i=0; i<scripts.length; i++){
       if(scripts[i]==document.getElementById('style').value){
@@ -111,41 +138,54 @@ blockquote{font-size:90%;font-family:SimFang}
       html = html.replace(/\n/g,"$");
       html = html.replace(/\r/g,"$");
 
-      html = html.replace(/(\$\$\s\s\s\s\s\s\s\s)([^\$<]*)/g,"<p class=foot>$2</p>");
+      html = html.replace(/(\$\s\s\s\s\s\s\s\s)([^\$<]*)/g,"<p class=foot>$2</p>");
       html = html.replace(/(\$\s\s\s\s\s)([^\$<]*)/g,"<blockquote>$2</blockquote>");
-      html = html.replace(/(\$\$\s\s\s\s)([^\$<]*)/g,"<h2>$2</h2>");
+      html = html.replace(/(\$\s\s\s\s)([^\$<]*)/g,"<h2>$2</h2>");
       html = html.replace(/(\$\s\s\s)([^\$<]*)/g,"<blockquote>$2</blockquote>");
       html = html.replace(/<\/blockquote><blockquote>/g,"<br/>");
-      html = html.replace(/(\$\$\s\s)([^\$<]*)/g,"<p>$2</p>");
+      html = html.replace(/(\$\s\s)([^\$<]*)/g,"<p>$2</p>");
       html = html.replace(/(\$\s\s)([^\$<]*)/g,"<p>$2</p>");
       html = html.replace(/(\$\$\$)([^\$<]*)/g,"<h1>$2</h1>");
+      html = html.replace(/_([^_]+?)_/g,"<font class=name>$1</font>");
+      html = html.replace(/\*([^\*]+?)\*/g,"<b>$1</b>");
+      html = html.replace(/~([^~]+?)~/g,"<font class=book>$1</font>");
       html = html.replace(/\$----([^\$<]*)/g,"<hr class=split />");
-      html = html.replace(/\$/g,"<br/>");
+      html = html.replace(/\$\$/g,"$");
+      html = html.replace(/\$\$/g,"$");
+      html = html.replace(/\$/g,"");
       html = html.replace(/<br\/><br\/>/g,"<br/>");
       html = html.replace(/<\/p><br\/>/g,"<\/p>");
       html = html.replace(/([^<]*)/,"<h1>$1</h1>");
 
-      html = html.replace(/\u201c/g,"\u201c<font class=dialog>"); //‚Äú‚Äù
-      html = html.replace(/\u201d/g,"</font>\u201d");
-      html = html.replace(/\u2018/g,"\u2018<font class=dialog>"); //‚Äò‚Äô
-      html = html.replace(/\u2019/g,"</font>\u2019");
-      html = html.replace(/\uff08/g,"<font class=note>\uff08"); //ÔºàÔºâ
-      html = html.replace(/\uff09/g,"\uff09</font>");
-      html = html.replace(/\u300a/g,"<font class=name>\u300a"); //„Ää „Äã
-      html = html.replace(/\u300b/g,"\u300b</font>");
-      html = html.replace(/\u3008/g,"<font class=name>\u3008"); //„Äà „Äâ
-      html = html.replace(/\u3009/g,"\u3009</font>");
-      html = html.replace(/\u3010/g,"<font class=note>\u3010"); //„Äê „Äë
-      html = html.replace(/\u3011/g,"\u3011</font>");
-      html = html.replace(/\u300e/g,"\u300e<font class=dialog>"); //„Äé „Äè
-      html = html.replace(/\u300f/g,"</font>\u300f");
-      html = html.replace(/\u300c/g,"\u300c<font class=dialog>"); //„Äå „Äç
-      html = html.replace(/\u300d/g,"</font>\u300d");
-      html = html.replace(/\ufe43/g,"\ufe43<font class=dialog>"); //ÔπÉ ÔπÑ
-      html = html.replace(/\ufe44/g,"</font>\ufe44");
-      html = html.replace(/\u3014/g,"<font class=name>\u3014"); //„Äî „Äï
-      html = html.replace(/\u3015/g,"\u3015</font>");
+      html = html.replace(/\u201c/g,"<font class=vertchinese><font class=startdialog>\u201c</font></font><font class=dialog>"); //°∞°±
+      html = html.replace(/\u201d/g,"</font><font class=vertchinese><font class=enddialog>\u201d</font></font>");
+      html = html.replace(/\u2018/g,"<font class=vertchinese><font class=startdialog>\u2018</font></font><font class=dialog>"); //°Æ°Ø
+      html = html.replace(/\u2019/g,"</font><font class=vertchinese><font class=enddialog>\u2019</font></font>");
+      html = html.replace(/\uff08/g,"<font class=note><font class=vertchinese><font class=startnote>\uff08</font></font>"); //£®£©
+      html = html.replace(/\uff09/g,"<font class=vertchinese><font class=endnote>\uff09</font></font></font>");
+      html = html.replace(/\u300a/g,"<font class=book><font class=vertchinese><font class=startnote>\u300a</font></font>"); //°∂ °∑
+      html = html.replace(/\u300b/g,"<font class=vertchinese><font class=endnote>\u300b</font></font></font>");
+      html = html.replace(/\u3008/g,"<font class=name><font class=vertchinese><font class=startnote>\u3008</font></font>"); //°¥ °µ
+      html = html.replace(/\u3009/g,"<font class=vertchinese><font class=endnote>\u3009</font></font></font>");
+      html = html.replace(/\u3010/g,"<font class=note><font class=vertchinese><font class=startnote>\u3010</font></font>"); //°æ °ø
+      html = html.replace(/\u3011/g,"<font class=vertchinese><font class=endnote>\u3011</font></font></font>");
+      html = html.replace(/\u300e/g,"<font class=vertchinese><font class=startdialog>\u300e</font></font><font class=dialog>"); //°∫ °ª
+      html = html.replace(/\u300f/g,"</font><font class=vertchinese><font class=enddialog>\u300f</font></font>");
+      html = html.replace(/\u300c/g,"<font class=vertchinese><font class=startdialog>\u300c</font></font><font class=dialog>"); //°∏ °π
+      html = html.replace(/\u300d/g,"</font><font class=vertchinese><font class=enddialog>\u300d</font></font>");
+      html = html.replace(/\ufe43/g,"<font class=vertchinese><font class=startdialog>\ufe43</font></font><font class=dialog>"); //¶Í ¶Î
+      html = html.replace(/\ufe44/g,"</font><font class=vertchinese><font class=enddialog>\ufe44</font></font>");
+      html = html.replace(/\u3014/g,"<font class=name><font class=vertchinese><font class=startnote>\u3014</font></font>"); //°≤ °≥
+      html = html.replace(/\u3015/g,"<font class=vertchinese><font class=endnote>\u3015</font></font></font>");
 
+//alert(html);
+      html = html.replace(/\u3002/g,"<font class=vertchinese><font class=punctuation>\u3002</font></font>"); //°£
+      html = html.replace(/\uff1f/g,"<font class=vertchinese><font class=punctuation>\uff1f</font></font>"); //£ø
+      html = html.replace(/\uff01/g,"<font class=vertchinese><font class=punctuation>\uff01</font></font>"); //£°
+      html = html.replace(/\uff0c/g,"<font class=vertchinese><font class=punctuation>\uff0c</font></font>"); //£¨
+      html = html.replace(/\u3001/g,"<font class=vertchinese><font class=punctuation>\u3001</font></font>"); //°¢
+      html = html.replace(/\uff1b/g,"<font class=vertchinese><font class=punctuation>\uff1b</font></font>"); //£ª
+      html = html.replace(/\uff1a/g,"<font class=vertchinese><font class=punctuation>\uff1a</font></font>"); //£∫
       out.innerHTML = "<br/><br/>"+html;
     }
   }
