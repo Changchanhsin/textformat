@@ -32,11 +32,12 @@ Partial Class frmHelp
         Me.txtHelp.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtHelp.Location = New System.Drawing.Point(12, 12)
+        Me.txtHelp.Location = New System.Drawing.Point(9, 9)
+        Me.txtHelp.Margin = New System.Windows.Forms.Padding(2)
         Me.txtHelp.Multiline = True
         Me.txtHelp.Name = "txtHelp"
         Me.txtHelp.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtHelp.Size = New System.Drawing.Size(776, 382)
+        Me.txtHelp.Size = New System.Drawing.Size(583, 288)
         Me.txtHelp.TabIndex = 4
         Me.txtHelp.Text = resources.GetString("txtHelp.Text")
         '
@@ -44,20 +45,23 @@ Partial Class frmHelp
         '
         Me.cmdClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmdClose.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.cmdClose.Location = New System.Drawing.Point(650, 404)
+        Me.cmdClose.Location = New System.Drawing.Point(488, 303)
+        Me.cmdClose.Margin = New System.Windows.Forms.Padding(2)
         Me.cmdClose.Name = "cmdClose"
-        Me.cmdClose.Size = New System.Drawing.Size(138, 40)
+        Me.cmdClose.Size = New System.Drawing.Size(104, 30)
         Me.cmdClose.TabIndex = 7
         Me.cmdClose.Text = "Close"
         Me.cmdClose.UseVisualStyleBackColor = True
         '
         'frmHelp
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 454)
+        Me.ClientSize = New System.Drawing.Size(600, 340)
         Me.Controls.Add(Me.cmdClose)
         Me.Controls.Add(Me.txtHelp)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmHelp"
         Me.Text = "Help"
         Me.ResumeLayout(False)

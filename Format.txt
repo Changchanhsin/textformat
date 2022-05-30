@@ -1,4 +1,11 @@
-﻿MACRO|显示回车换行|COMP|
+﻿MACRO|ISO标准列表|COMP|
+REPLACE|^p|^t|
+REPLACE|^tISO|^pISO|
+REPLACE|^tIEC|^pIEC|
+REPLACE|^p|^pTC213^t|
+TRIM|
+
+MACRO|显示回车换行|COMP|
 REPLACE|^d|<0x0d>|
 REPLACE|^a|<0x0a>|
 

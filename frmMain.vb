@@ -68,7 +68,9 @@ Public Class frmMain
         isUntitled = True
         UpdateFormTitle()
         UpdateCodeset()
-        frmScript.Show()
+        If ShowScriptToolStripMenuItem.Checked = True Then
+            frmScript.Show()
+        End If
         frmMain_Move(sender, e)
         Dim a As String
         a = Microsoft.VisualBasic.Command
@@ -420,15 +422,22 @@ Public Class frmMain
 
     Private Sub frmMain_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         If isChanged = True Then
-            If (MessageBox.Show("Text changed, Save ?", "Process Closing...", MessageBoxButtons.OKCancel) <> DialogResult.Cancel) Then
-                If (isUntitled = True) Then
-                    If sfd.ShowDialog() = DialogResult.Cancel Then
-                        Exit Sub
+            Dim yourChoice = MessageBox.Show("Text changed, Save ?", "Process Closing...", MessageBoxButtons.YesNoCancel)
+            Select Case yourChoice
+                Case DialogResult.Yes
+                    If (isUntitled = True) Then
+                        If sfd.ShowDialog() = DialogResult.Cancel Then
+                            Exit Sub
+                        End If
+                        currFilename = sfd.FileName
                     End If
-                    currFilename = sfd.FileName
-                End If
-                SaveFile()
-            End If
+                    SaveFile()
+                    e.Cancel = False
+                Case DialogResult.No
+                    e.Cancel = False
+                Case DialogResult.Cancel
+                    e.Cancel = True
+            End Select
         End If
     End Sub
 
@@ -437,7 +446,7 @@ Public Class frmMain
             frmScript.Left = Me.Left - frmScript.Width
             frmScript.Top = Me.Top
         Else
-            frmScript.Left = Me.Left + Me.Width - frmScript.Width
+            frmScript.Left = Me.Left + Me.Width - frmScript.Width - 32
             frmScript.Top = Me.Top + 64
         End If
     End Sub
@@ -449,6 +458,11 @@ Public Class frmMain
         Else
             ShowScriptToolStripMenuItem.Checked = True
             frmScript.Show()
+            frmMain_Move(sender, e)
         End If
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Application.Exit()
     End Sub
 End Class

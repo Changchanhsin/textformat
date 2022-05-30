@@ -207,6 +207,9 @@
   <data name="&gt;&gt;ToolStripMenuItem3.Name" xml:space="preserve">
     <value>ToolStripMenuItem3</value>
   </data>
+  <data name="ssrMain.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 0, 10, 0</value>
+  </data>
   <data name="&gt;&gt;RemoveToolStripMenuItem.Name" xml:space="preserve">
     <value>RemoveToolStripMenuItem</value>
   </data>
@@ -278,6 +281,9 @@
   </data>
   <data name="RedoToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+Y</value>
+  </data>
+  <data name="&gt;&gt;DD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Text</value>
@@ -456,6 +462,9 @@
   <data name="ExitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>410, 44</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="PrevToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -491,6 +500,9 @@
   </data>
   <data name="&gt;&gt;PrevToolStripMenuItem.Name" xml:space="preserve">
     <value>PrevToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;DD.Name" xml:space="preserve">
+    <value>DD</value>
   </data>
   <data name="&gt;&gt;tssCodeset.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -627,9 +639,6 @@
   <data name="AsShiftJISToolStripMenuItem.Text" xml:space="preserve">
     <value>Shift-&amp;JIS</value>
   </data>
-  <data name="&gt;&gt;ShiftJISToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="AsGB18030ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>407, 44</value>
   </data>
@@ -707,6 +716,9 @@
   </data>
   <data name="CutToolStripMenuItem.Text" xml:space="preserve">
     <value>Cu&amp;t</value>
+  </data>
+  <data name="DD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 28</value>
   </data>
   <data name="&gt;&gt;menuMain.Parent" xml:space="preserve">
     <value>$this</value>
@@ -897,6 +909,9 @@
   <data name="&gt;&gt;ManageToolStripMenuItem.Name" xml:space="preserve">
     <value>ManageToolStripMenuItem</value>
   </data>
+  <data name="&gt;&gt;ShiftJISToolStripMenuItem.Name" xml:space="preserve">
+    <value>ShiftJISToolStripMenuItem</value>
+  </data>
   <data name="GotoToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Goto</value>
   </data>
@@ -1044,8 +1059,8 @@
   <data name="FontToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>271, 44</value>
   </data>
-  <data name="&gt;&gt;ShiftJISToolStripMenuItem.Name" xml:space="preserve">
-    <value>ShiftJISToolStripMenuItem</value>
+  <data name="&gt;&gt;ShiftJISToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DeleteToolStripMenuItem.Name" xml:space="preserve">
     <value>DeleteToolStripMenuItem</value>

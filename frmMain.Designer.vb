@@ -439,8 +439,6 @@ Partial Class frmMain
         'ShowScriptToolStripMenuItem
         '
         resources.ApplyResources(Me.ShowScriptToolStripMenuItem, "ShowScriptToolStripMenuItem")
-        Me.ShowScriptToolStripMenuItem.Checked = True
-        Me.ShowScriptToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.ShowScriptToolStripMenuItem.Name = "ShowScriptToolStripMenuItem"
         '
         'HelpToolStripMenuItem
